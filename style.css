@@ -196,7 +196,7 @@ i:hover {
 
 .projects .project img {
     width: 100%;
-    border-radius: 30px 30px 20px 20px;
+    border-radius: 30px;
 }
 
 .projects .project h3 {
@@ -205,7 +205,7 @@ i:hover {
     position: absolute;
     bottom: 0;
     background-color: #000000;
-    border-radius: 30px;
+    border-radius: 0px 0px 30px 30px;
 }
 
 .infos-project {
