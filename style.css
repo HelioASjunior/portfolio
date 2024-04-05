@@ -1,0 +1,40 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+body {
+    width: 100vw;
+    min-height: 100vh;
+}
+
+header {
+    padding: 30px 200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-right {
+    display: flex;
+    gap: 50px;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.home {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+img {
+    width: 200px;
+}
