@@ -173,6 +173,7 @@ i:hover {
     font-size: 45px;
     font-weight: 500;
     margin: 50px 0px;
+    padding-top: 50px;
 }
 
 .container-projects {
@@ -188,6 +189,7 @@ i:hover {
     height: auto;
     position: relative;
     display: none;
+    margin-top: 20px;
 }
 
 .project.active {
@@ -250,6 +252,65 @@ i:hover {
 .btn-show-projects.remove {
     display: none;
 }
+
+.curriculo {
+    margin: 50px 0px;
+    padding-top: 100px;
+    display: flex;
+    justify-content: center;
+    gap: 200px;
+    align-items: center;
+}
+
+.container-download-curriculo {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+}
+
+.curriculo h2 {
+    font-size: 45px;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+
+.curriculo h3 {
+    font-weight: 400;
+}
+
+.curriculo h4 {
+    font-weight: 200;
+}
+
+.btn-curriculo {
+    background: none;
+    border: 1px solid #ffffff;
+    border-radius: 30px;
+    width: 250px;
+    padding: 15px;
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin-top: 30px;
+}
+
+.btn-curriculo:hover {
+    transition: 0.3s;
+    border: 1px solid #9443d8;
+    color: #9443d8;
+}
+
+.curriculo-img {
+    width: 500px;
+    border-radius: 30px;
+}
+
+
 
 @keyframes gradient-animation {
     0% {
