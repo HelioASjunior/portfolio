@@ -320,7 +320,7 @@ i:hover {
     text-align: center;
     align-items: center;
     justify-content: center;
-    margin: 10% 0% 6% 0%;
+    margin: 10% 0% 2%;
     padding: 8%;
 }
 
@@ -372,6 +372,28 @@ span {
     border: 1px solid #0f083d;
 }
 
+.btn-back-to-top {
+    background: none;
+    border: 1px solid #ffffff;
+    border-radius: 30px;
+    width: 200px;
+    padding: 15px;
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    cursor: pointer;
+    margin-bottom: 30px;
+    gap: 5px;
+    text-decoration: none;
+}
+
+.btn-back-to-top:hover {
+    border: 1px solid #0f083d;
+    color: #0f083d;
+}
 
 @keyframes gradient-animation {
     0% {
