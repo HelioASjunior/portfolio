@@ -254,8 +254,8 @@ i:hover {
 }
 
 .curriculo {
-    margin: 50px 0px;
-    padding-top: 100px;
+    margin: 10% 0px;
+    padding-top: 8%;
     display: flex;
     justify-content: center;
     gap: 200px;
@@ -314,6 +314,63 @@ i:hover {
     border-radius: 30px;
 }
 
+.contato {
+    display: flex;
+    gap: 50px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin: 10% 0% 6% 0%;
+    padding: 8%;
+}
+
+.container-contact-left {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.container-contact-right {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.logo-contact {
+    width: 100px;
+}
+
+.a-contact p:hover {
+    color: #0f083d;
+}
+
+span {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.a-contact {
+    background: none;
+    border: 1px solid #ffffff;
+    border-radius: 100px;
+    padding: 20px 60px;
+    font-size: 20px;
+    font-weight: 700;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    width: 450px;
+    font-size: 20px;
+    line-height: 25px;
+    text-decoration: none;
+    gap: 50px;
+}
+
+.a-contact:hover {
+    border: 1px solid #0f083d;
+}
 
 
 @keyframes gradient-animation {
