@@ -6,7 +6,7 @@
 <br>
 
 <div align="center">
-  <img width="1500px" src="https://github.com/feliperyo/first-portfolio/blob/master/assets/mockups/mockup.png?raw=true"/>
+  <img width="800px" src="https://github.com/feliperyo/first-portfolio/blob/master/assets/mockups/mockup.png?raw=true"/>
 </div>
 <br>
 <div align="center">
