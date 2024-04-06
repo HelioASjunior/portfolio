@@ -301,8 +301,21 @@ i:hover {
 
 .btn-curriculo:hover {
     transition: 0.3s;
-    border: 1px solid #9443d8;
-    color: #9443d8;
+    border: 1px solid #0f083d;
+    color: #0f083d;
+}
+
+.btn-curriculo:active {
+    opacity: 0.5;
+}
+
+.btn-curriculo a:hover {
+    transition: 0.3s;
+    color: #0f083d;
+}
+
+.btn-curriculo a:active {
+    opacity: 0.5;
 }
 
 .curriculo-img {
