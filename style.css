@@ -362,7 +362,6 @@ span {
     align-items: center;
     cursor: pointer;
     width: 450px;
-    font-size: 20px;
     line-height: 25px;
     text-decoration: none;
     gap: 50px;
@@ -406,5 +405,160 @@ span {
 
     100% {
         background-position: 0% 50%;
+    }
+}
+
+@media screen and (max-width: 1030px) {
+
+    header {
+        padding: 15px 100px;
+    }
+
+    .home {
+        width: 95vw;
+        flex-direction: column;
+        padding: 150px 0;
+        gap: 30px;
+    }
+
+    h1 {
+        font-size: 45px;
+    }
+
+    .subtitle {
+        font-size: 20px;
+    }
+
+    .p-infos {
+        font-size: 30px;
+    }
+
+    .infos {
+        gap: 30px;
+        max-width: 80%;
+        text-align: center;
+    }
+
+    .ul-social-medias {
+        align-items: center;
+        justify-content: center;
+    }
+
+    i {
+        width: 100px;
+        height: 100px;
+        padding: 17px;
+        font-size: 65px;
+    }
+
+    .curriculo {
+        margin: 10% 0px;
+        padding-top: 16%;
+        gap: 50px;
+        flex-direction: column;
+    }
+
+    .contato {
+        gap: 50px;
+        flex-direction: column;
+        padding-bottom: 150px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    header {
+        display: none;
+    }
+
+    .home {
+        padding: 30px 0px 0px;
+        gap: 20px;
+        width: 100vw;
+        justify-content: center;
+    }
+
+    h1 {
+        font-size: 40px;
+        margin-bottom: 20px;
+    }
+
+    .subtitle {
+        font-size: 18px;
+        margin-bottom: 30px;
+    }
+
+    .p-infos {
+        font-size: 20px;
+    }
+
+    .infos {
+        gap: 15px;
+        max-width: 90%;
+    }
+
+    i {
+        width: 60px;
+        height: 60px;
+        padding: 8px;
+        font-size: 40px;
+    }
+
+    .img-perfil {
+        width: 300px;
+    }
+
+    .projects {
+        padding: 0px;
+    }
+
+    .curriculo {
+        width: 90vw;
+        margin: 0 auto;
+    }
+
+    .curriculo h2 {
+        font-size: 30px;
+    }
+
+    .curriculo h3 {
+        margin-top: -30px;
+    }
+
+    .curriculo h4 {
+        font-size: 20px;
+        margin-top: 20px;
+    }
+
+    .curriculo-img {
+        width: 350px;
+    }
+
+    .contato {
+        gap: 30px;
+        padding-bottom: 100px;
+    }
+
+    .container-contact-left {
+        gap: 30px;
+    }
+
+    .container-contact-right {
+        gap: 30px;
+    }
+
+    .logo-contact {
+        width: 65px;
+    }
+
+    span {
+        font-size: 16px;
+    }
+
+    .a-contact {
+        padding: 20px 30px;
+        font-size: 18px;
+        width: 350px;
+        gap: 40px;
+        justify-content: space-around;
     }
 }
