@@ -1,12 +1,12 @@
 <h1 align="center">
   Meu Primeiro Portfólio</h1>
 <br>
-<h3 align="center">Estudo de HTML e CSS.</h3>
+<h3 align="center">Estudo de HTML, CSS e Responsividade.</h3>
 <br>
 <br>
 
 <div align="center">
-  <img width="1500px" src="https://github.com/feliperyo/first-portfolio/blob/master/assets/mockups/mockup.png?raw=true"/>
+  <img width="800px" src="https://github.com/feliperyo/first-portfolio/blob/master/assets/mockups/mockup.png?raw=true"/>
 </div>
 <br>
 <div align="center">
