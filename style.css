@@ -165,7 +165,7 @@ i:hover {
 }
 
 .projects {
-    padding: 70px 0px;
+    padding: 50px 0px;
 }
 
 .title {
@@ -241,16 +241,13 @@ i:hover {
     align-items: center;
     cursor: pointer;
     margin-top: 40px;
+    visibility: visible;
 }
 
 .btn-show-projects:hover {
     transition: 0.3s;
     border: 1px solid #9443d8;
     color: #9443d8;
-}
-
-.btn-show-projects.remove {
-    display: none;
 }
 
 .curriculo {
