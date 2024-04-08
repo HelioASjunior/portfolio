@@ -11,7 +11,7 @@ body {
     width: 100vw;
     min-height: 100vh;
     height: 100%;
-    background: linear-gradient(150deg, #000000, #9443d8);
+    background: linear-gradient(150deg, #000000, #7d0964);
     background-size: 120% 120%;
     font-family: "Raleway", sans-serif;
 }
@@ -43,8 +43,8 @@ header {
 }
 
 .logo:hover {
-    border: 2px solid #9443d8;
-    color: #9443d8;
+    border: 2px solid #ff00c8;
+    color: #ff00c8;
 }
 
 .nav-right {
@@ -63,7 +63,7 @@ header {
     content: '';
     width: 0%;
     height: 1.5px;
-    background-color: #9443d8;
+    background-color: #ff00c8;
     position: absolute;
     left: 0;
     bottom: -3px;
@@ -75,7 +75,7 @@ header {
 }
 
 .a-header:hover {
-    color: #9443d8;
+    color: #ff00c8;
 }
 
 .home {
@@ -136,8 +136,8 @@ i {
 }
 
 i:hover {
-    color: #9443d8;
-    border: 1px solid #9443d8;
+    color: #ff00c8;
+    border: 1px solid #ff00c8;
     transform: scale(1.1);
 }
 
@@ -159,9 +159,9 @@ i:hover {
 }
 
 .inner-shadow {
-    background: linear-gradient(to right, #8A35C8, #18C063, #00EEA2);
+    background: linear-gradient(to right, #ff00c8, #0f083d, #9443d8);
     background-size: 180% 180%;
-    animation: gradient-animation 5s ease infinite;
+    animation: gradient-animation 5s ease-in-out infinite;
 }
 
 .projects {
@@ -246,8 +246,8 @@ i:hover {
 
 .btn-show-projects:hover {
     transition: 0.3s;
-    border: 1px solid #9443d8;
-    color: #9443d8;
+    border: 1px solid #ff00c8;
+    color: #ff00c8;
 }
 
 .curriculo {
@@ -298,8 +298,8 @@ i:hover {
 
 .btn-curriculo:hover {
     transition: 0.3s;
-    border: 1px solid #0f083d;
-    color: #0f083d;
+    border: 1px solid #ff00c8;
+    color: #ff00c8;
 }
 
 .btn-curriculo:active {
@@ -387,8 +387,8 @@ span {
 }
 
 .btn-back-to-top:hover {
-    border: 1px solid #0f083d;
-    color: #0f083d;
+    border: 1px solid #ff00c8;
+    color: #ff00c8;
 }
 
 @keyframes gradient-animation {
