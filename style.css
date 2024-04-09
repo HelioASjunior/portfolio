@@ -66,16 +66,17 @@ header {
 .a-header::after {
     content: '';
     width: 0%;
-    height: 1.5px;
+    height: 2px;
     background-color: #ff00c8;
     position: absolute;
-    left: 0;
+    left: 50%;
     bottom: -3px;
 }
 
 .a-header:hover::after {
     width: 100%;
     transition: 0.2s;
+    left: 0;
 }
 
 .a-header:hover {
