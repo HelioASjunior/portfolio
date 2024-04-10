@@ -489,6 +489,10 @@ i:hover {
         margin-bottom: 20px;
     }
 
+    .title {
+        font-size: 35px;
+    }
+
     .subtitle {
         font-size: 18px;
         margin-bottom: 30px;
@@ -557,7 +561,7 @@ i:hover {
         width: 65px;
     }
 
-    span {
+    .span {
         font-size: 16px;
     }
 
