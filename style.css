@@ -2,7 +2,6 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    color: #ffffff;
     transition: 0.2s;
     scroll-behavior: smooth;
 }
@@ -18,10 +17,10 @@ body {
 }
 
 header {
-    padding: 10px 200px;
+    padding: 25px 200px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     position: fixed;
     width: 100vw;
     z-index: 999;
@@ -31,28 +30,7 @@ header {
     box-shadow: 0px -5px 10px 15px rgba(0, 0, 0, 0.68);
 }
 
-.logo {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 65px;
-    height: 65px;
-    border-radius: 50%;
-    border: 2px solid #ffffff;
-    text-decoration: underline;
-    font-family: "Montserrat", sans-serif;
-}
-
-.logo h1 {
-    font-size: 32px;
-}
-
-.logo:hover {
-    border: 2px solid #ff00c8;
-    color: #ff00c8;
-}
-
-.nav-right {
+.nav-header {
     display: flex;
     gap: 50px;
 }
@@ -60,39 +38,23 @@ header {
 .a-header {
     text-decoration: none;
     cursor: pointer;
-    font-size: 20px;
-    position: relative;
-}
-
-.a-header::after {
-    content: '';
-    width: 0%;
-    height: 2px;
-    background-color: #ff00c8;
-    position: absolute;
-    left: 50%;
-    bottom: -3px;
-}
-
-.a-header:hover::after {
-    width: 100%;
-    transition: 0.2s;
-    left: 0;
+    font-size: 14px;
+    color: #cacaca;
 }
 
 .a-header:hover {
-    color: #ff00c8;
+    color: #ffffff;
 }
 
 .home {
     width: 60%;
-    min-height: 100vh;
+    min-height: 75vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: 0 auto;
     position: relative;
-    padding: 150px 0;
+    padding-top: 100px;
     gap: 50px;
 }
 
@@ -102,20 +64,23 @@ header {
     gap: 25px;
     letter-spacing: 2px;
     padding: 0 15px;
-    max-width: 50%;
+    max-width: 55%;
 }
 
 .home h1 {
-    font-size: 32px;
+    font-size: 100px;
+    color: #ffffff;
 }
 
 .subtitle {
     font-size: 16px;
     margin-top: -20px;
+    color: #cacaca;
 }
 
 .p-infos {
     font-size: 20px;
+    color: #ffffff;
 }
 
 ul {
@@ -129,6 +94,7 @@ ul {
 
 
 i {
+    color: #ffffff;
     border: 1px solid #ffffff;
     border-radius: 50%;
     width: 50px;
@@ -170,17 +136,41 @@ i:hover {
     animation: gradient-animation 5s ease-in-out infinite;
 }
 
-.projects {
-    padding: 50px 0px;
+.projects-swiper {
+    padding: 10px 0;
+}
+
+.nav-projects {
+    display: flex;
+    color: #ffffff;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin: 0px auto 50px;
+    text-align: center;
+    width: 100%;
+}
+
+.a-projects {
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 14px;
+    color: #a0a0a0;
+}
+
+.a-projects:hover {
+    color: #ffffff;
 }
 
 .title {
     text-align: center;
     font-size: 45px;
     font-weight: 900;
-    margin: 50px 0px;
+    margin: 50px 0px 20px;
     padding-top: 50px;
     text-transform: uppercase;
+    color: #ffffff;
 }
 
 .span-title {
@@ -191,34 +181,43 @@ i:hover {
     display: flex;
     gap: 20px;
     flex-wrap: wrap;
+    margin-top: 30px;
     margin-bottom: 20px;
     justify-content: center;
 }
 
-.project {
-    max-width: 500px;
-    height: auto;
-    position: relative;
-    display: none;
-    margin-top: 20px;
-}
-
-.project.active {
-    display: block;
-}
-
-.projects .project img {
+swiper-container {
     width: 100%;
+    height: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-img {
+    height: auto;
+    width: 500px;
     border-radius: 30px;
 }
 
-.projects .project h3 {
+.project {
+    position: relative;
+    margin-top: 20px;
+}
+
+.project-h3 {
     width: 100%;
     padding: 10px 0px 10px 20px;
     position: absolute;
     bottom: 0;
     background-color: #000000;
     border-radius: 0px 0px 30px 30px;
+    color: #ffffff;
 }
 
 .infos-project {
@@ -231,34 +230,12 @@ i:hover {
     opacity: 0;
     border-radius: 30px;
     padding: 20px;
+    color: #ffffff;
 }
 
 .infos-project:hover {
     opacity: 0.90;
     background-color: #000000;
-}
-
-.btn-show-projects {
-    background: none;
-    border: 1px solid #ffffff;
-    border-radius: 30px;
-    width: 180px;
-    padding: 15px;
-    font-size: 18px;
-    font-weight: 600;
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    margin-top: 40px;
-    visibility: visible;
-}
-
-.btn-show-projects:hover {
-    transition: 0.3s;
-    border: 1px solid #ff00c8;
-    color: #ff00c8;
 }
 
 .curriculo {
@@ -281,14 +258,17 @@ i:hover {
     font-size: 45px;
     font-weight: 500;
     margin-bottom: 30px;
+    color: #ffffff;
 }
 
 .curriculo h3 {
     font-weight: 400;
+    color: #a0a0a0;
 }
 
 .curriculo h4 {
     font-weight: 200;
+    color: #ffffff;
 }
 
 .btn-curriculo {
@@ -305,6 +285,7 @@ i:hover {
     align-items: center;
     cursor: pointer;
     margin-top: 30px;
+    color: #ffffff;
 }
 
 .btn-curriculo:hover {
@@ -322,84 +303,59 @@ i:hover {
     border-radius: 30px;
 }
 
-.contato {
-    display: flex;
-    gap: 50px;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    margin: 10% 0% 2%;
-    padding: 8%;
-}
-
-.container-contact-left {
-    display: flex;
-    flex-direction: column;
-    gap: 50px;
-}
-
-.container-contact-right {
-    display: flex;
-    flex-direction: column;
-    gap: 50px;
-}
-
-.logo-contact {
-    width: 100px;
-}
-
-.a-contact p:hover {
-    color: #0f083d;
-}
-
-.span {
-    font-size: 18px;
-    font-weight: 500;
-}
-
-.a-contact {
-    background: none;
-    border: 1px solid #ffffff;
-    border-radius: 100px;
-    padding: 20px 60px;
-    font-size: 20px;
-    font-weight: 700;
-    margin: 0 auto;
+.footer {
+    background-color: #000;
+    height: 300px;
+    width: 100%;
     display: flex;
     justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    width: 450px;
-    line-height: 25px;
-    text-decoration: none;
-    gap: 50px;
+    position: relative;
+    gap: 100px;
+    bottom: 0;
 }
 
-.a-contact:hover {
-    border: 1px solid #0f083d;
-}
-
-.btn-back-to-top {
-    background: none;
-    border: 1px solid #ffffff;
-    border-radius: 30px;
-    width: 200px;
-    padding: 15px;
-    font-size: 18px;
-    font-weight: 600;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    cursor: pointer;
+.footer h3 {
+    color: #ffffff;
     margin-bottom: 30px;
-    gap: 5px;
-    text-decoration: none;
+    margin-top: 30px;
 }
 
-.btn-back-to-top:hover {
-    border: 1px solid #ff00c8;
-    color: #ff00c8;
+.footer-left,
+.footer-right {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-left: 150px;
+}
+
+.footer-left p {
+    color: #3a3a3a
+}
+
+.a-footer {
+    color: #a0a0a0;
+    text-decoration: none;
+    transition: 0.1s;
+}
+
+.a-footer:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+.footer-mark {
+    position: absolute;
+    color: #3a3a3a;
+    margin: 0 auto;
+    bottom: 20px;
+    font-size: 14px;
+}
+
+.whatsapp {
+    position: fixed;
+    right: 15px;
+    bottom: 15px;
+    z-index: 99;
 }
 
 @keyframes gradient-animation {
@@ -417,160 +373,119 @@ i:hover {
 }
 
 @media screen and (max-width: 1030px) {
-
-    header {
-        padding: 15px 100px;
-    }
-
     .home {
-        width: 95vw;
+        width: 80%;
+        min-height: 75vh;
         flex-direction: column;
-        padding: 150px 0;
-        gap: 30px;
-    }
-
-    .home h1 {
-        font-size: 45px;
-    }
-
-    .subtitle {
-        font-size: 20px;
-    }
-
-    .p-infos {
-        font-size: 30px;
-    }
-
-    .infos {
-        gap: 30px;
-        max-width: 80%;
+        justify-content: center;
         text-align: center;
     }
 
-    .ul-social-medias {
-        align-items: center;
-        justify-content: center;
+    .infos {
+        max-width: 100%;
     }
 
-    i {
-        width: 100px;
-        height: 100px;
-        padding: 17px;
-        font-size: 65px;
+    ul {
+        margin: 0 auto;
+    }
+
+    .container-perfil {
+        width: 350px;
     }
 
     .curriculo {
-        margin: 10% 0px;
-        padding-top: 16%;
-        gap: 50px;
+        margin: 1% 0px 50px;
+        padding-top: 15%;
+        gap: 75px;
         flex-direction: column;
     }
 
-    .contato {
-        gap: 50px;
-        flex-direction: column;
-        padding-bottom: 150px;
+    .footer-left,
+    .footer-right {
+        margin-left: 50px;
     }
 }
 
 @media screen and (max-width: 500px) {
-    header {
-        display: none;
-    }
-
     .home {
-        padding: 30px 0px 0px;
-        gap: 20px;
-        width: 100vw;
-        justify-content: center;
+        width: 90%;
+        min-height: 75vh;
     }
 
-    h1 {
-        font-size: 40px;
-        margin-bottom: 20px;
-    }
-
-    .title {
-        font-size: 35px;
-    }
-
-    .subtitle {
-        font-size: 18px;
-        margin-bottom: 30px;
+    .home h1 {
+        font-size: 50px;
     }
 
     .p-infos {
-        font-size: 20px;
+        font-size: 18px;
     }
 
-    .infos {
-        gap: 15px;
-        max-width: 90%;
-    }
-
-    i {
-        width: 60px;
-        height: 60px;
-        padding: 8px;
-        font-size: 40px;
-    }
-
-    .img-perfil {
+    .container-perfil {
         width: 300px;
     }
 
-    .projects {
-        padding: 0px;
+    .projects-swiper {
+        padding: 10px 0;
     }
 
-    .curriculo {
-        width: 90vw;
-        margin: 0 auto;
+    .nav-projects {
+        gap: 30px;
+    }
+
+    .a-projects {
+        font-size: 12px;
+    }
+
+    .title {
+        margin-top: 25px;
+    }
+
+    swiper-container {
+        height: 500px;
+    }
+
+    .swiper-img {
+        width: 300px;
+        border-radius: 20px;
+    }
+
+    .project-h3 {
+        padding: 10px 0px 10px 20px;
+        border-radius: 0px 0px 20px 20px;
+        font-size: 16px;
+    }
+
+    .infos-project {
+        border-radius: 20px;
     }
 
     .curriculo h2 {
-        font-size: 30px;
-    }
-
-    .curriculo h3 {
-        margin-top: -30px;
+        font-size: 35px;
     }
 
     .curriculo h4 {
-        font-size: 20px;
-        margin-top: 20px;
+        width: 60%;
+        margin: 0 auto;
     }
 
     .curriculo-img {
         width: 350px;
+        border-radius: 20px;
     }
 
-    .contato {
-        gap: 30px;
-        padding-bottom: 100px;
+    .footer {
+        padding: 0 40px 0;
+        width: 100%;
+        gap: 10px;
+        height: 350px;
     }
 
-    .container-contact-left {
-        gap: 30px;
-    }
-
-    .container-contact-right {
-        gap: 30px;
-    }
-
-    .logo-contact {
-        width: 65px;
-    }
-
-    .span {
+    .footer h3 {
         font-size: 16px;
     }
 
-    .a-contact {
-        padding: 20px 30px;
-        font-size: 18px;
-        width: 350px;
-        gap: 40px;
-        justify-content: space-around;
+    .footer-left,
+    .footer-right {
+        font-size: 16px;
     }
 }

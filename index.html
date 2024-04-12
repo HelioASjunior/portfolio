@@ -28,18 +28,11 @@
     <div>
 
         <header>
-
-            <nav class="nav-left">
-                <a href="#home">
-                    <h1 class="logo">FR</h1>
-                </a>
-            </nav>
-
-            <nav class="nav-right">
+            <nav class="nav-header">
                 <a class="a-header" href="#home">Home</a>
                 <a class="a-header" href="#projetos">Projetos</a>
                 <a class="a-header" href="#curriculo">Currículo</a>
-                <a class="a-header" href="#contato">Contato</a>
+                <a class="a-header" href="#footer">Contato</a>
             </nav>
 
         </header>
@@ -75,262 +68,302 @@
 
             </div>
             <div class="container-perfil">
-            </div>
-            <div class="perfil inner-shadow">
-                <img class="img-perfil" src="./assets/perfil/perfil-no-bg.png" alt="Foto de perfil Felipe Ryo" />
-            </div>
+                <div class="perfil inner-shadow">
+                    <img class="img-perfil" src="./assets/perfil/perfil-no-bg.png" alt="Foto de perfil Felipe Ryo" />
+                </div>
         </section>
 
-        <section class="projects" id="projetos">
+
+        <section id="projetos" class="projects-swiper">
             <h2 class="title">Meus <span class="span-title">Projetos</span></h2>
-            <div class="container-projects">
 
-                <div class="active project">
-                    <a href="https://github.com/feliperyo/rocketeer-helmets" target="_blank">
-                        <img src="./assets/mockups/rockteer-helmets-img.jpg" alt="Landing Page Rocketeer Helmets" />
-                        <h3>Rocketeer Helmets - Landing Page</h3>
-                        <div class="infos-project">
-                            <p>HTML, CSS e Responsividade.</p>
-                            <p class="p-reposit">🔗 Ver Repositório no GitHub</p>
-                        </div>
-                    </a>
-                </div>
+            <nav class="nav-projects">
+                <a class="a-projects" id="show-all-projects">Todos</a>
+                <a class="a-projects">Completos</a>
+                <a class="a-projects">Landing Pages</a>
+                <a class="a-projects">Jogos/Interações</a>
+            </nav>
 
-                <div class="active project">
-                    <a href="https://github.com/feliperyo/barber-shop" target="_blank">
-                        <img src="./assets/mockups/barber-shop-img.jpg" alt="Landing Page Barber Shop" />
-                        <h3>Barber Shop - Landing Page</h3>
-                        <div class="infos-project">
+            <div class="container-projects"></div>
 
-                            <div class="p-projects">
+            <swiper-container class="mySwiper" pagination="true" pagination-clickable="true" slides-per-view="3.35"
+                grid-rows="2" grab-cursor="true">
+
+
+                <swiper-slide>
+                    <div class="project">
+                        <a href="https://github.com/feliperyo/rocketeer-helmets" target="_blank">
+                            <img class="swiper-img" src="./assets/mockups/rockteer-helmets-img.jpg"
+                                alt="Landing Page Rocketeer Helmets" />
+                            <h3 class="project-h3">Rocketeer Helmets - Landing Page</h3>
+                            <div class="infos-project">
                                 <p>HTML, CSS e Responsividade.</p>
                                 <p class="p-reposit">🔗 Ver Repositório no GitHub</p>
                             </div>
-                        </div>
-                    </a>
-                </div>
+                        </a>
+                    </div>
+                </swiper-slide>
+                <swiper-slide>
+                    <div class="project">
+                        <a href="https://github.com/feliperyo/barber-shop" target="_blank">
+                            <img class="swiper-img" src="./assets/mockups/barber-shop-img.jpg"
+                                alt="Landing Page Barber Shop" />
+                            <h3 class="project-h3">Barber Shop - Landing Page</h3>
+                            <div class="infos-project">
 
-                <div class="active project">
-                    <a href="https://github.com/feliperyo/mario-brothers" target="_blank">
-                        <img src="./assets/mockups/mario-img.jpg" alt="Mario Brothers" />
-                        <h3>Mario Brothers</h3>
-                        <div class="infos-project">
-
-                            <div class="p-projects">
-                                <p>HTML, CSS, JavaScript e Responsividade.</p>
-                                <p class="p-reposit">🔗 Ver Repositório no GitHub</p>
+                                <div class="p-projects">
+                                    <p>HTML, CSS e Responsividade.</p>
+                                    <p class="p-reposit">🔗 Ver Repositório no GitHub</p>
+                                </div>
                             </div>
-                        </div>
-                    </a>
-                </div>
+                        </a>
+                    </div>
+                </swiper-slide>
+                <swiper-slide>
+                    <div class="project">
+                        <a href="https://github.com/feliperyo/mario-brothers" target="_blank">
+                            <img class="swiper-img" src="./assets/mockups/mario-img.jpg" alt="Mario Brothers" />
+                            <h3 class="project-h3">Mario Brothers</h3>
+                            <div class="infos-project">
 
-                <div class="active project">
-                    <a href="https://github.com/feliperyo/coffee-page" target="_blank">
-                        <img src="./assets/mockups/coffee-img.jpg" alt="Coffee Page" />
-                        <h3>Coffee Page</h3>
-                        <div class="infos-project">
-                            <p>HTML, CSS e Responsividade.</p>
-                            <p class="p-reposit">🔗 Ver Repositório no GitHub</p>
-                        </div>
-                    </a>
-                </div>
-
-                <div class="active project">
-                    <a href="https://github.com/feliperyo/ibliz-inc-pumpkin" target="_blank">
-                        <img src="./assets/mockups/ibliz-pumpkin-img.jpg" alt="Ibliz Inc Pumpkin - Landing Page" />
-                        <h3>Ibliz Inc Pumpkin - Landing Page</h3>
-                        <div class="infos-project">
-
-                            <div class="p-projects">
+                                <div class="p-projects">
+                                    <p>HTML, CSS, JavaScript e Responsividade.</p>
+                                    <p class="p-reposit">🔗 Ver Repositório no GitHub</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </swiper-slide>
+                <swiper-slide>
+                    <div class="project">
+                        <a href="https://github.com/feliperyo/coffee-page" target="_blank">
+                            <img class="swiper-img" src="./assets/mockups/coffee-img.jpg" alt="Coffee Page" />
+                            <h3 class="project-h3">Coffee Page</h3>
+                            <div class="infos-project">
                                 <p>HTML, CSS e Responsividade.</p>
                                 <p class="p-reposit">🔗 Ver Repositório no GitHub</p>
                             </div>
-                        </div>
-                    </a>
-                </div>
+                        </a>
+                    </div>
+                </swiper-slide>
+                <swiper-slide>
+                    <div class="project">
+                        <a href="https://github.com/feliperyo/ibliz-inc-pumpkin" target="_blank">
+                            <img class="swiper-img" src="./assets/mockups/ibliz-pumpkin-img.jpg"
+                                alt="Ibliz Inc Pumpkin - Landing Page" />
+                            <h3 class="project-h3">Ibliz Inc Pumpkin - Landing Page</h3>
+                            <div class="infos-project">
 
-                <div class="active project">
-                    <a href="https://github.com/feliperyo/x-lanches" target="_blank">
-                        <img src="./assets/mockups/x-lanches-img.jpg" alt="X-Lanches" />
-                        <h3>X-Lanches</h3>
-                        <div class="infos-project">
+                                <div class="p-projects">
+                                    <p>HTML, CSS e Responsividade.</p>
+                                    <p class="p-reposit">🔗 Ver Repositório no GitHub</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </swiper-slide>
+                <swiper-slide>
+                    <div class="project">
+                        <a href="https://github.com/feliperyo/x-lanches" target="_blank">
+                            <img class="swiper-img" src="./assets/mockups/x-lanches-img.jpg" alt="X-Lanches" />
+                            <h3 class="project-h3">X-Lanches</h3>
+                            <div class="infos-project">
 
-                            <div class="p-projects">
+                                <div class="p-projects">
+                                    <p>HTML, CSS, JavaScript e Responsividade.</p>
+                                    <p class="p-reposit">🔗 Ver Repositório no GitHub</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </swiper-slide>
+                <swiper-slide>
+                    <div class="project">
+                        <a href="https://github.com/feliperyo/currency-converter" target="_blank">
+                            <img class="swiper-img" src="./assets/mockups/conversor-img.jpg"
+                                alt="Conversor de Moedas" />
+                            <h3 class="project-h3">Conversor de Moedas</h3>
+                            <div class="infos-project">
                                 <p>HTML, CSS, JavaScript e Responsividade.</p>
                                 <p class="p-reposit">🔗 Ver Repositório no GitHub</p>
                             </div>
-                        </div>
-                    </a>
-                </div>
+                        </a>
+                    </div>
+                </swiper-slide>
+                <swiper-slide>
+                    <div class="project">
+                        <a href="https://github.com/feliperyo/ibliz-inc-ghosts" target="_blank">
+                            <img class="swiper-img" src="./assets/mockups/ghosts-img.jpg"
+                                alt="Ibliz Inc Ghosts - Landing Page" />
+                            <h3 class="project-h3">Ibliz Inc Ghosts - Landing Page</h3>
+                            <div class="infos-project">
 
-                <div class="project">
-                    <a href="https://github.com/feliperyo/currency-converter" target="_blank">
-                        <img src="./assets/mockups/conversor-img.jpg" alt="Conversor de Moedas" />
-                        <h3>Conversor de Moedas</h3>
-                        <div class="infos-project">
-                            <p>HTML, CSS, JavaScript e Responsividade.</p>
-                            <p class="p-reposit">🔗 Ver Repositório no GitHub</p>
-                        </div>
-                    </a>
-                </div>
-
-                <div class="project">
-                    <a href="https://github.com/feliperyo/ibliz-inc-ghosts" target="_blank">
-                        <img src="./assets/mockups/ghosts-img.jpg" alt="Ibliz Inc Ghosts - Landing Page" />
-                        <h3>Ibliz Inc Ghosts - Landing Page</h3>
-                        <div class="infos-project">
-
-                            <div class="p-projects">
-                                <p>HTML, CSS e Responsividade.</p>
-                                <p class="p-reposit">🔗 Ver Repositório no GitHub</p>
+                                <div class="p-projects">
+                                    <p>HTML, CSS e Responsividade.</p>
+                                    <p class="p-reposit">🔗 Ver Repositório no GitHub</p>
+                                </div>
                             </div>
-                        </div>
-                    </a>
-                </div>
+                        </a>
+                    </div>
+                </swiper-slide>
+                <swiper-slide>
+                    <div class="project">
+                        <a href="https://github.com/feliperyo/eye-z" target="_blank">
+                            <img class="swiper-img" src="./assets/mockups/eye-z-img.jpg" alt="Eye.z Login" />
+                            <h3 class="project-h3">Eye.z Login</h3>
+                            <div class="infos-project">
 
-                <div class="project">
-                    <a href="https://github.com/feliperyo/eye-z" target="_blank">
-                        <img src="./assets/mockups/eye-z-img.jpg" alt="Eye.z Login" />
-                        <h3>Eye.z Login</h3>
-                        <div class="infos-project">
-
-                            <div class="p-projects">
-                                <p>HTML, CSS, JavaScript e Responsividade (Mobile First).</p>
-                                <p class="p-reposit">🔗 Ver Repositório no GitHub</p>
+                                <div class="p-projects">
+                                    <p>HTML, CSS, JavaScript e Responsividade (Mobile First).</p>
+                                    <p class="p-reposit">🔗 Ver Repositório no GitHub</p>
+                                </div>
                             </div>
-                        </div>
-                    </a>
-                </div>
+                        </a>
+                    </div>
+                </swiper-slide>
+                <swiper-slide>
+                    <div class="project">
+                        <a href="https://github.com/feliperyo/starbucks" target="_blank">
+                            <img class="swiper-img" src="./assets/mockups/starbucks-img.jpg"
+                                alt="Starbucks - Landing Page" />
+                            <h3 class="project-h3">Starbucks - Landing Page</h3>
+                            <div class="infos-project">
 
-                <div class="project">
-                    <a href="https://github.com/feliperyo/starbucks" target="_blank">
-                        <img src="./assets/mockups/starbucks-img.jpg" alt="Starbucks - Landing Page" />
-                        <h3>Starbucks - Landing Page</h3>
-                        <div class="infos-project">
-
-                            <div class="p-projects">
-                                <p>HTML, CSS, JavaScript e Responsividade.</p>
-                                <p class="p-reposit">🔗 Ver Repositório no GitHub</p>
+                                <div class="p-projects">
+                                    <p>HTML, CSS, JavaScript e Responsividade.</p>
+                                    <p class="p-reposit">🔗 Ver Repositório no GitHub</p>
+                                </div>
                             </div>
-                        </div>
-                    </a>
-                </div>
+                        </a>
+                    </div>
+                </swiper-slide>
+                <swiper-slide>
+                    <div class="project">
+                        <a href="https://github.com/feliperyo/divination-game" target="_blank">
+                            <img class="swiper-img" src="./assets/mockups/divination-game-img.jpg"
+                                alt="Jogo de Adivinhação" />
+                            <h3 class="project-h3">Jogo de Adivinhação</h3>
+                            <div class="infos-project">
 
-                <div class="project">
-                    <a href="https://github.com/feliperyo/divination-game" target="_blank">
-                        <img src="./assets/mockups/divination-game-img.jpg" alt="Jogo de Adivinhação" />
-                        <h3>Jogo de Adivinhação</h3>
-                        <div class="infos-project">
-
-                            <div class="p-projects">
-                                <p>HTML, CSS, JavaScript e Responsividade.</p>
-                                <p class="p-reposit">🔗 Ver Repositório no GitHub</p>
+                                <div class="p-projects">
+                                    <p>HTML, CSS, JavaScript e Responsividade.</p>
+                                    <p class="p-reposit">🔗 Ver Repositório no GitHub</p>
+                                </div>
                             </div>
-                        </div>
-                    </a>
-                </div>
+                        </a>
+                    </div>
+                </swiper-slide>
+                <swiper-slide>
+                    <div class="project">
+                        <a href="https://github.com/feliperyo/sorteio-de-numero" target="_blank">
+                            <img class="swiper-img" src="./assets/mockups/sort-number-img.jpg"
+                                alt="Sorteio de Número" />
+                            <h3 class="project-h3">Sorteio de Número</h3>
+                            <div class="infos-project">
 
-                <div class="project">
-                    <a href="https://github.com/feliperyo/sorteio-de-numero" target="_blank">
-                        <img src="./assets/mockups/sort-number-img.jpg" alt="Sorteio de Número" />
-                        <h3>Sorteio de Número</h3>
-                        <div class="infos-project">
-
-                            <div class="p-projects">
-                                <p>HTML, CSS, JavaScript e Responsividade.</p>
-                                <p class="p-reposit">🔗 Ver Repositório no GitHub</p>
+                                <div class="p-projects">
+                                    <p>HTML, CSS, JavaScript e Responsividade.</p>
+                                    <p class="p-reposit">🔗 Ver Repositório no GitHub</p>
+                                </div>
                             </div>
-                        </div>
-                    </a>
-                </div>
+                        </a>
+                    </div>
+                </swiper-slide>
+                <swiper-slide>
+                    <div class="project">
+                        <a href="https://github.com/feliperyo/joken-po" target="_blank">
+                            <img class="swiper-img" src="./assets/mockups/joken-po-img.jpg" alt="Joken-Pô" />
+                            <h3 class="project-h3">Joken-Pô</h3>
+                            <div class="infos-project">
 
-                <div class="project">
-                    <a href="https://github.com/feliperyo/joken-po" target="_blank">
-                        <img src="./assets/mockups/joken-po-img.jpg" alt="Joken-Pô" />
-                        <h3>Joken-Pô</h3>
-                        <div class="infos-project">
-
-                            <div class="p-projects">
-                                <p>HTML, CSS, JavaScript e Responsividade.</p>
-                                <p class="p-reposit">🔗 Ver Repositório no GitHub</p>
+                                <div class="p-projects">
+                                    <p>HTML, CSS, JavaScript e Responsividade.</p>
+                                    <p class="p-reposit">🔗 Ver Repositório no GitHub</p>
+                                </div>
                             </div>
-                        </div>
-                    </a>
-                </div>
+                        </a>
+                    </div>
+                </swiper-slide>
+                <swiper-slide>
+                    <div class="project">
+                        <a href="https://github.com/feliperyo/calculadora" target="_blank">
+                            <img class="swiper-img" src="./assets/mockups/calculator-img.jpg" alt="Calculadora" />
+                            <h3 class="project-h3">Calculadora</h3>
+                            <div class="infos-project">
 
-                <div class="project">
-                    <a href="https://github.com/feliperyo/calculadora" target="_blank">
-                        <img src="./assets/mockups/calculator-img.jpg" alt="Calculadora" />
-                        <h3>Calculadora</h3>
-                        <div class="infos-project">
-
-                            <div class="p-projects">
-                                <p>HTML, CSS, JavaScript e Responsividade.</p>
-                                <p class="p-reposit">🔗 Ver Repositório no GitHub</p>
+                                <div class="p-projects">
+                                    <p>HTML, CSS, JavaScript e Responsividade.</p>
+                                    <p class="p-reposit">🔗 Ver Repositório no GitHub</p>
+                                </div>
                             </div>
-                        </div>
-                    </a>
-                </div>
+                        </a>
+                    </div>
+                </swiper-slide>
+                <swiper-slide>
+                    <div class="project">
+                        <a href="https://github.com/feliperyo/cronometro" target="_blank">
+                            <img class="swiper-img" src="./assets/mockups/cronometro-img.jpg" alt="Cronômetro" />
+                            <h3 class="project-h3">Cronômetro</h3>
+                            <div class="infos-project">
 
-                <div class="project">
-                    <a href="https://github.com/feliperyo/cronometro" target="_blank">
-                        <img src="./assets/mockups/cronometro-img.jpg" alt="Cronômetro" />
-                        <h3>Cronômetro</h3>
-                        <div class="infos-project">
-
-                            <div class="p-projects">
-                                <p>HTML, CSS, JavaScript e Responsividade.</p>
-                                <p class="p-reposit">🔗 Ver Repositório no GitHub</p>
+                                <div class="p-projects">
+                                    <p>HTML, CSS, JavaScript e Responsividade.</p>
+                                    <p class="p-reposit">🔗 Ver Repositório no GitHub</p>
+                                </div>
                             </div>
-                        </div>
-                    </a>
-                </div>
+                        </a>
+                    </div>
+                </swiper-slide>
+                <swiper-slide>
+                    <div class="project">
+                        <a href="https://github.com/feliperyo/cuidamos-do-seu-pet" target="_blank">
+                            <img class="swiper-img" src="./assets/mockups/pet-img.jpg" alt="Pet - Landing Page" />
+                            <h3 class="project-h3">Pet - Landing Page</h3>
+                            <div class="infos-project">
 
-                <div class="project">
-                    <a href="https://github.com/feliperyo/cuidamos-do-seu-pet" target="_blank">
-                        <img src="./assets/mockups/pet-img.jpg" alt="Pet - Landing Page" />
-                        <h3>Pet - Landing Page</h3>
-                        <div class="infos-project">
-
-                            <div class="p-projects">
-                                <p>HTML, CSS e Responsividade.</p>
-                                <p class="p-reposit">🔗 Ver Repositório no GitHub</p>
+                                <div class="p-projects">
+                                    <p>HTML, CSS e Responsividade.</p>
+                                    <p class="p-reposit">🔗 Ver Repositório no GitHub</p>
+                                </div>
                             </div>
-                        </div>
-                    </a>
-                </div>
+                        </a>
+                    </div>
+                </swiper-slide>
+                <swiper-slide>
+                    <div class="project">
+                        <a href="https://github.com/feliperyo/via-movel" target="_blank">
+                            <img class="swiper-img" src="./assets/mockups/via-movel-img.jpg"
+                                alt="Via Móvel - Landing Page" />
+                            <h3 class="project-h3">Via Móvel - Landing Page</h3>
+                            <div class="infos-project">
 
-                <div class="project">
-                    <a href="https://github.com/feliperyo/via-movel" target="_blank">
-                        <img src="./assets/mockups/via-movel-img.jpg" alt="Via Móvel - Landing Page" />
-                        <h3>Via Móvel - Landing Page</h3>
-                        <div class="infos-project">
-
-                            <div class="p-projects">
-                                <p>HTML, CSS e Responsividade.</p>
-                                <p class="p-reposit">🔗 Ver Repositório no GitHub</p>
+                                <div class="p-projects">
+                                    <p>HTML, CSS e Responsividade.</p>
+                                    <p class="p-reposit">🔗 Ver Repositório no GitHub</p>
+                                </div>
                             </div>
-                        </div>
-                    </a>
-                </div>
+                        </a>
+                    </div>
+                </swiper-slide>
+                <swiper-slide>
+                    <div class="project">
+                        <a href="https://github.com/feliperyo/ampla-cobertura" target="_blank">
+                            <img class="swiper-img" src="./assets/mockups/ampla-cobertura-img.jpg"
+                                alt="Ampla Cobertura - Landing Page" />
+                            <h3 class="project-h3">Ampla Cobertura - Landing Page</h3>
+                            <div class="infos-project">
 
-                <div class="project">
-                    <a href="https://github.com/feliperyo/ampla-cobertura" target="_blank">
-                        <img src="./assets/mockups/ampla-cobertura-img.jpg" alt="Ampla Cobertura - Landing Page" />
-                        <h3>Ampla Cobertura - Landing Page</h3>
-                        <div class="infos-project">
-
-                            <div class="p-projects">
-                                <p>HTML, CSS e Responsividade.</p>
-                                <p class="p-reposit">🔗 Ver Repositório no GitHub</p>
+                                <div class="p-projects">
+                                    <p>HTML, CSS e Responsividade.</p>
+                                    <p class="p-reposit">🔗 Ver Repositório no GitHub</p>
+                                </div>
                             </div>
-                        </div>
-                    </a>
-                </div>
+                        </a>
+                    </div>
 
-            </div>
+                </swiper-slide>
+            </swiper-container>
 
-            <button class="btn-show-projects">Mostrar Todos</button>
         </section>
 
         <section class="curriculo" id="curriculo">
@@ -348,64 +381,51 @@
             </div>
         </section>
 
-        <section class="contato" id="contato">
+        <section class="footer" id="footer">
 
-            <div class="container-contact-left">
+            <div class="footer-left">
+                <h3>Navegar</h3>
 
-                <div class="contato-email">
-
-                    <a class="a-contact" href="mailto:ryofeliperyo@gmail.com" type="Email"
-                        title="Enviar Email para Felipe Ryo" target="_blank"><img class="logo-contact"
-                            src="./assets/logos/logo-email.png">
-                        <p>Enviar Email
-                            <br><span class="span">ryofeliperyo@gmail.com</span>
-                        </p>
-                    </a>
-                </div>
-
-                <div class="contato-linkedin">
-
-                    <a class="a-contact" href="https://www.linkedin.com/in/feliperyo/"
-                        title="Abrir LinkedIn de Felipe Ryo" target="_blank"><img class="logo-contact"
-                            src="./assets/logos/logo-linkedin.png">
-                        <p>Abrir LinkedIn<br><span class="span">Felipe
-                                Ryo</span></p>
-                    </a>
-                </div>
-
+                <a class="a-footer" href="#home">Home</a>
+                <a class="a-footer" href="#projetos">Projetos</a>
+                <a class="a-footer" href="#curriculo">Currículo</a>
+                <p>Contato</p>
             </div>
 
-            <div class="container-contact-right">
-                <div class="contato-wpp">
+            <div class="footer-right">
+                <h3>Contato</h3>
 
-                    <a class="a-contact" href="http://wa.me/551172821988"
-                        title="Enviar mensagem no WhatsApp para Felipe Ryo" target="_blank"><img class="logo-contact"
-                            src="./assets/logos/logo-wpp.png">
-                        <p>Abrir WhatsApp <br>
-                            <span class="span">(11) 9 7282-1988</span>
-                        </p>
-                    </a>
-                </div>
-
-
-                <div class="contato-github">
-
-                    <a class="a-contact" href="https://github.com/feliperyo" title="Abrir GitHub de Felipe Ryo"
-                        target="_blank"><img class="logo-contact" src="./assets/logos/logo-github.png">
-                        <p>Abrir GitHub <br><span class="span">Felipe Ryo</span></p>
-                    </a>
-
-                </div>
-
+                <a class="a-footer" href="https://github.com/feliperyo" title="Abrir GitHub de Felipe Ryo"
+                    target="_blank">
+                    <p>Abrir GitHub</p>
+                </a>
+                <a class="a-footer" href="https://www.linkedin.com/in/feliperyo/" title="Abrir LinkedIn de Felipe Ryo"
+                    target="_blank">
+                    <p>Abrir LinkedIn</p>
+                </a>
+                <a class="a-footer" href="http://wa.me/551172821988" title="Enviar mensagem no WhatsApp para Felipe Ryo"
+                    target="_blank">
+                    <p>Abrir WhatsApp: (11) 9 7282-1988</p>
+                </a>
+                <a class="a-footer" href="mailto:ryofeliperyo@gmail.com" type="Email"
+                    title="Enviar Email para Felipe Ryo" target="_blank">
+                    <p>Enviar Email: ryofeliperyo@gmail.com</p>
+                </a>
             </div>
+
+            <p class="footer-mark">© 2024 Felipe Ryo</p>
 
         </section>
 
-        <a class="btn-back-to-top" href="#home">Voltar ao Topo <img src="./assets/logos/arrow.png"
-                alt="seta pra cima"></a>
-
+        <div class="whatsapp">
+            <a href="http://wa.me/551172821988">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+        </div>
     </div>
+
 </body>
-<script src="./scripts.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+<script src="./responsiveness.js"></script>
 
 </html>
