@@ -459,6 +459,11 @@ swiper-slide {
         border-radius: 20px;
     }
 
+    .curriculo {
+        margin: -15px 0 50px;
+        padding-top: 100px;
+    }
+
     .curriculo h2 {
         font-size: 35px;
     }
