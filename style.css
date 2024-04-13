@@ -424,6 +424,11 @@ swiper-slide {
 }
 
 @media screen and (max-width: 500px) {
+
+    header {
+        padding: 25px 0px;
+    }
+
     .home {
         width: 90%;
         min-height: 75vh;
