@@ -298,9 +298,26 @@ swiper-slide {
     opacity: 0.5;
 }
 
+.container-curriculo {
+    overflow: hidden;
+    border-radius: 30px;
+}
+
+.container-curriculo:hover {
+    box-shadow: 0 0 8px #e6dd96;
+    border: solid 1px #ffffff;
+}
+
 .curriculo-img {
     width: 500px;
     border-radius: 30px;
+    -webkit-transition: -webkit-transform .5s ease;
+    transition: transform .5s ease;
+}
+
+.curriculo-img:hover {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
 }
 
 .footer {
