@@ -1,10 +1,10 @@
 let list = document.querySelector(".mySwiper")
 let myLi = ''
 
-async function showAll(itensArray) {
+async function showAll() {
     myLi = ''
 
-    for (const project of itensArray) {
+    for (const project of projects) {
         myLi += `
     <swiper-slide>
                 <div class="project">
@@ -23,3 +23,5 @@ async function showAll(itensArray) {
     }
     await Promise.all(list.innerHTML = myLi)
 }
+
+showAll()
