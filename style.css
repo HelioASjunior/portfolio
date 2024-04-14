@@ -64,7 +64,7 @@ header {
     gap: 25px;
     letter-spacing: 2px;
     padding: 0 15px;
-    max-width: 55%;
+    max-width: 60%;
 }
 
 .home h1 {
@@ -386,6 +386,16 @@ swiper-slide {
 
     100% {
         background-position: 0% 50%;
+    }
+}
+
+@media screen and (max-width: 1600px) {
+    .home h1 {
+        font-size: 80px;
+    }
+
+    .p-infos {
+        font-size: 16px;
     }
 }
 
