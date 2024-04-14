@@ -298,9 +298,26 @@ swiper-slide {
     opacity: 0.5;
 }
 
+.container-curriculo {
+    overflow: hidden;
+    border-radius: 30px;
+}
+
+.container-curriculo:hover {
+    box-shadow: 0 0 8px #e6dd96;
+    border: solid 1px #ffffff;
+}
+
 .curriculo-img {
     width: 500px;
     border-radius: 30px;
+    -webkit-transition: -webkit-transform .5s ease;
+    transition: transform .5s ease;
+}
+
+.curriculo-img:hover {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
 }
 
 .footer {
@@ -372,6 +389,16 @@ swiper-slide {
     }
 }
 
+@media screen and (max-width: 1600px) {
+    .home h1 {
+        font-size: 80px;
+    }
+
+    .p-infos {
+        font-size: 16px;
+    }
+}
+
 @media screen and (max-width: 1030px) {
     .home {
         width: 80%;
@@ -407,6 +434,11 @@ swiper-slide {
 }
 
 @media screen and (max-width: 500px) {
+
+    header {
+        padding: 25px 0px;
+    }
+
     .home {
         width: 90%;
         min-height: 75vh;
@@ -438,6 +470,7 @@ swiper-slide {
 
     .title {
         margin-top: 25px;
+        font-size: 35px;
     }
 
     swiper-container {
