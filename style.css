@@ -420,6 +420,10 @@ swiper-slide {
         width: 350px;
     }
 
+    swiper-container {
+        height: 350px;
+    }
+
     .curriculo {
         margin: 1% 0px 50px;
         padding-top: 15%;
@@ -436,10 +440,11 @@ swiper-slide {
 @media screen and (max-width: 500px) {
 
     header {
-        padding: 25px 0px;
+        display: none;
     }
 
     .home {
+        margin-top: -25px;
         width: 90%;
         min-height: 75vh;
     }
@@ -469,12 +474,14 @@ swiper-slide {
     }
 
     .title {
+        padding-top: 100px;
         margin-top: 25px;
         font-size: 35px;
+        margin-bottom: -50px;
     }
 
     swiper-container {
-        height: 500px;
+        height: 300px;
     }
 
     .swiper-img {
