@@ -4,22 +4,22 @@ let myLi = ''
 async function showAll(itensArray) {
     myLi = ''
 
-    itensArray.forEach(item => {
+    for (const project of itensArray) {
         myLi += `
-        <swiper-slide>
-                    <div class="project">
-                        <a href=${item.href} target="_blank">
-                            <img src=${item.src} class="swiper-img" />
-                            <h3 class="project-h3">${item.name}</h3>
-                            <div class="infos-project">
-                                <p>${item.detail}</p>
-                                <p class="p-reposit">🔗 Ver Repositório no GitHub</p>
-                            </div>
-                        </a>
-                    </div>
-                </swiper-slide>
-            `
+    <swiper-slide>
+                <div class="project">
+                    <a href=${project.href} target="_blank">
+                        <img src=${project.src} class="swiper-img" />
+                        <h3 class="project-h3">${project.name}</h3>
+                        <div class="infos-project">
+                            <p>${project.detail}</p>
+                            <p class="p-reposit">🔗 Ver Repositório no GitHub</p>
+                        </div>
+                    </a>
+                </div>
+            </swiper-slide>
+        `
 
-    })
-    list.innerHTML = myLi
+    }
+    await Promise.all(list.innerHTML = myLi)
 }
