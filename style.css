@@ -65,6 +65,7 @@ header {
     letter-spacing: 2px;
     padding: 0 15px;
     max-width: 60%;
+    max-width: 60%;
 }
 
 .home h1 {
@@ -187,10 +188,8 @@ i:hover {
 }
 
 swiper-container {
-    width: 100%;
+    width: 99%;
     height: 400px;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 swiper-slide {
@@ -208,6 +207,7 @@ swiper-slide {
 .project {
     position: relative;
     margin-top: 20px;
+    left: 0;
 }
 
 .project-h3 {
@@ -238,8 +238,20 @@ swiper-slide {
     background-color: #000000;
 }
 
+.projects-txt {
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 5%;
+    line-height: 50px;
+    color: #ffffff;
+}
+
 .curriculo {
-    margin: 10% 0px;
+    margin: 1% 0px;
     padding-top: 8%;
     display: flex;
     justify-content: center;
@@ -308,9 +320,26 @@ swiper-slide {
     border: solid 1px #ffffff;
 }
 
+.container-curriculo {
+    overflow: hidden;
+    border-radius: 30px;
+}
+
+.container-curriculo:hover {
+    box-shadow: 0 0 8px #e6dd96;
+    border: solid 1px #ffffff;
+}
+
 .curriculo-img {
     width: 500px;
     border-radius: 30px;
+    -webkit-transition: -webkit-transform .5s ease;
+    transition: transform .5s ease;
+}
+
+.curriculo-img:hover {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
     -webkit-transition: -webkit-transform .5s ease;
     transition: transform .5s ease;
 }
@@ -329,6 +358,7 @@ swiper-slide {
     position: relative;
     gap: 100px;
     bottom: 0;
+    margin-top: 5%;
 }
 
 .footer h3 {
@@ -399,6 +429,16 @@ swiper-slide {
     }
 }
 
+@media screen and (max-width: 1600px) {
+    .home h1 {
+        font-size: 80px;
+    }
+
+    .p-infos {
+        font-size: 16px;
+    }
+}
+
 @media screen and (max-width: 1030px) {
     .home {
         width: 80%;
@@ -421,7 +461,7 @@ swiper-slide {
     }
 
     swiper-container {
-        height: 350px;
+        width: 98%;
     }
 
     .curriculo {
@@ -443,7 +483,13 @@ swiper-slide {
         display: none;
     }
 
+
+    header {
+        display: none;
+    }
+
     .home {
+        margin-top: -25px;
         margin-top: -25px;
         width: 90%;
         min-height: 75vh;
@@ -475,13 +521,21 @@ swiper-slide {
 
     .title {
         padding-top: 100px;
+        padding-top: 100px;
         margin-top: 25px;
-        font-size: 35px;
         margin-bottom: -50px;
     }
 
     swiper-container {
         height: 300px;
+    }
+
+    .projects-txt {
+        font-size: 14px;
+        line-height: 40px;
+        width: 350px;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .swiper-img {
