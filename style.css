@@ -64,7 +64,7 @@ header {
     gap: 25px;
     letter-spacing: 2px;
     padding: 0 15px;
-    max-width: 55%;
+    max-width: 60%;
 }
 
 .home h1 {
@@ -309,9 +309,26 @@ swiper-slide {
     opacity: 0.5;
 }
 
+.container-curriculo {
+    overflow: hidden;
+    border-radius: 30px;
+}
+
+.container-curriculo:hover {
+    box-shadow: 0 0 8px #e6dd96;
+    border: solid 1px #ffffff;
+}
+
 .curriculo-img {
     width: 500px;
     border-radius: 30px;
+    -webkit-transition: -webkit-transform .5s ease;
+    transition: transform .5s ease;
+}
+
+.curriculo-img:hover {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
 }
 
 .footer {
@@ -384,6 +401,16 @@ swiper-slide {
     }
 }
 
+@media screen and (max-width: 1600px) {
+    .home h1 {
+        font-size: 80px;
+    }
+
+    .p-infos {
+        font-size: 16px;
+    }
+}
+
 @media screen and (max-width: 1030px) {
     .home {
         width: 80%;
@@ -428,7 +455,13 @@ swiper-slide {
         display: none;
     }
 
+
+    header {
+        display: none;
+    }
+
     .home {
+        margin-top: -25px;
         width: 90%;
         min-height: 75vh;
     }
@@ -458,6 +491,7 @@ swiper-slide {
     }
 
     .title {
+        padding-top: 100px;
         margin-top: 25px;
         margin-bottom: -50px;
     }
