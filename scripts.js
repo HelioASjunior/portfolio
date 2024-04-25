@@ -1,20 +1,50 @@
-const myObserver = new IntersectionObserver((entries) => {
+let list = document.querySelector(".mySwiper")
+let myLi = ''
 
-    entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-            entry.target.classList.add('show')
-        } else {
-            entry.target.classList.remove('show')
-        }
-    })
-})
+async function showAll() {
+    myLi = ''
 
-const elements = document.querySelectorAll('.hidden-left')
-elements.forEach((element) => {
-    myObserver.observe(element)
-})
+    for (const project of projects) {
+        myLi += `
+    <swiper-slide>
+                <div class="project">
+                    <a href=${project.href} target="_blank">
+                        <img src=${project.src} class="swiper-img" />
+                        <h3 class="project-h3">${project.name}</h3>
+                        <div class="infos-project">
+                            <p>${project.detail}</p>
+                            <p class="p-reposit">🔗 Ver Repositório no GitHub</p>
+                        </div>
+                    </a>
+                </div>
+            </swiper-slide>
+        `
 
-const containers = document.querySelectorAll('.hidden')
-containers.forEach((container) => {
-    myObserver.observe(container)
-})
+    }
+    await Promise.all(list.innerHTML = myLi)
+}
+
+async function btnShowAll() {
+    myLi = ''
+
+    for (const project of projects) {
+        myLi += `
+    <swiper-slide>
+                <div class="project">
+                    <a href=${project.href} target="_blank">
+                        <img src=${project.src} class="swiper-img" />
+                        <h3 class="project-h3">${project.name}</h3>
+                        <div class="infos-project">
+                            <p>${project.detail}</p>
+                            <p class="p-reposit">🔗 Ver Repositório no GitHub</p>
+                        </div>
+                    </a>
+                </div>
+            </swiper-slide>
+        `
+
+    }
+    await Promise.all(list.innerHTML = myLi)
+}
+
+showAll()
