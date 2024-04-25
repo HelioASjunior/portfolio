@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -38,7 +40,7 @@
         </header>
 
         <section class="home" id="home">
-            <div class="infos">
+            <div class="infos hidden-left">
                 <h1>Olá, sou o <span class="span-title">Felipe Ryo!</span></h1>
                 <p class="subtitle">Desenvolvedor Front-End</p>
                 <p class="p-infos">Atualmente estou em formação FullStack, praticando diariamente a parte técnica em
@@ -67,14 +69,14 @@
                 </ul>
 
             </div>
-            <div class="container-perfil">
+            <div class="container-perfil hidden">
                 <div class="perfil inner-shadow">
                     <img class="img-perfil" src="./assets/perfil/perfil-no-bg.png" alt="Foto de perfil Felipe Ryo" />
                 </div>
         </section>
 
 
-        <section id="projetos" class="projects-swiper">
+        <section id="projetos" class="projects-swiper hidden">
             <h2 class="title">Meus <span class="span-title">Projetos</span></h2>
 
             <!-- <nav class="nav-projects">
@@ -88,7 +90,31 @@
 
             <swiper-container class="mySwiper">
 
-
+                <swiper-slide>
+                    <div class="project">
+                        <a href="https://github.com/feliperyo/mra-swim" target="_blank">
+                            <img class="swiper-img" src="./assets/mockups/mra-img.jpg" alt="MRA Natação" />
+                            <h3 class="project-h3">MRA Natação - Freelance</h3>
+                            <div class="infos-project">
+                                <p>HTML, CSS, JavaScript e Responsividade.</p>
+                                <p class="p-reposit">🔗 Ver Repositório no GitHub</p>
+                            </div>
+                        </a>
+                    </div>
+                </swiper-slide>
+                <swiper-slide>
+                    <div class="project">
+                        <a href="https://github.com/feliperyo/skate-world" target="_blank">
+                            <img class="swiper-img" src="./assets/mockups/skate-world-img.jpg"
+                                alt="Skate World - Page" />
+                            <h3 class="project-h3">Skate World - Page</h3>
+                            <div class="infos-project">
+                                <p>HTML, CSS, JavaScript e Responsividade.</p>
+                                <p class="p-reposit">🔗 Ver Repositório no GitHub</p>
+                            </div>
+                        </a>
+                    </div>
+                </swiper-slide>
                 <swiper-slide>
                     <div class="project">
                         <a href="https://github.com/feliperyo/rocketeer-helmets" target="_blank">
@@ -179,22 +205,6 @@
                 </swiper-slide>
                 <swiper-slide>
                     <div class="project">
-                        <a href="https://github.com/feliperyo/ibliz-inc-ghosts" target="_blank">
-                            <img class="swiper-img" src="./assets/mockups/ghosts-img.jpg"
-                                alt="Ibliz Inc Ghosts - Landing Page" />
-                            <h3 class="project-h3">Ibliz Inc Ghosts - Landing Page</h3>
-                            <div class="infos-project">
-
-                                <div class="p-projects">
-                                    <p>HTML, CSS e Responsividade.</p>
-                                    <p class="p-reposit">🔗 Ver Repositório no GitHub</p>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                </swiper-slide>
-                <swiper-slide>
-                    <div class="project">
                         <a href="https://github.com/feliperyo/x-lanches" target="_blank">
                             <img class="swiper-img" src="./assets/mockups/x-lanches-img.jpg" alt="X-Lanches" />
                             <h3 class="project-h3">X-Lanches</h3>
@@ -248,21 +258,6 @@
 
                                 <div class="p-projects">
                                     <p>HTML, CSS, JavaScript e Responsividade.</p>
-                                    <p class="p-reposit">🔗 Ver Repositório no GitHub</p>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                </swiper-slide>
-                <swiper-slide>
-                    <div class="project">
-                        <a href="https://github.com/feliperyo/weather-forecast" target="_blank">
-                            <img class="swiper-img" src="./assets/mockups/tempo-img.jpg" alt="Previsão do Tempo" />
-                            <h3 class="project-h3">Previsão do Tempo</h3>
-                            <div class="infos-project">
-
-                                <div class="p-projects">
-                                    <p>HTML, CSS, JavaScript, Consumo de API e Responsividade.</p>
                                     <p class="p-reposit">🔗 Ver Repositório no GitHub</p>
                                 </div>
                             </div>
@@ -420,7 +415,7 @@
 
         </section>
 
-        <section class="curriculo" id="curriculo">
+        <section class="curriculo hidden" id="curriculo">
             <div class="container-download-curriculo">
                 <h2>Currículo Felipe Ryo</h2>
                 <h3>Desenvolvedor Front-End</h3>
@@ -481,7 +476,8 @@
     </div>
 
 </body>
-<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+
 <script src="./responsiveness.js"></script>
+<script src="./observer.js"></script>
 
 </html>
