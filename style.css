@@ -178,15 +178,13 @@ i:hover {
 .mySwiper {
     width: 99%;
     height: 250px;
-    position: relative;
 }
 
 .subtitle-projects {
     font-size: 14px;
     color: #cacaca;
-    position: absolute;
-    top: 20px;
-    left: 30px;
+    margin-top: 20px;
+    margin-bottom: -150px;
 }
 
 swiper-slide {
