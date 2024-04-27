@@ -1,7 +1,7 @@
 <h1 align="center">
   Meu Primeiro Portfólio</h1>
 <br>
-<h3 align="center">Estudo de HTML, CSS e Responsividade.</h3>
+<h3 align="center">Projeto desenvolvido com HTML, CSS, JavaScript e Responsividade.</h3>
 <br>
 <br>
 
