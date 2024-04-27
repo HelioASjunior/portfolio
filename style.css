@@ -217,17 +217,20 @@ swiper-slide {
     color: #ffffff;
 }
 
+.infos-project p {
+    color: #ffffff;
+    font-weight: 600;
+}
+
 .infos-project {
     background-color: #040203;
     position: absolute;
     top: 0;
     width: 100%;
     height: 99%;
-    font-weight: 600;
     opacity: 0;
     border-radius: 30px;
     padding: 20px;
-    color: #ffffff;
 }
 
 .infos-project:hover {
