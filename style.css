@@ -139,19 +139,7 @@ i:hover {
 
 .projects-swiper {
     padding: 10px 0;
-    margin-top: 50px;
-}
-
-.nav-projects {
-    display: flex;
-    color: #ffffff;
-    position: absolute;
-    justify-content: center;
-    align-items: center;
-    gap: 50px;
-    margin: 0px auto 50px;
-    text-align: center;
-    width: 100%;
+    margin-top: 30px;
 }
 
 .a-projects {
@@ -169,8 +157,8 @@ i:hover {
     text-align: center;
     font-size: 45px;
     font-weight: 900;
-    margin: 50px 0px 20px;
-    padding-top: 50px;
+    margin: 50px 0px 10px;
+    padding-top: 40px;
     text-transform: uppercase;
     color: #ffffff;
 }
@@ -181,16 +169,24 @@ i:hover {
 
 .container-projects {
     display: flex;
-    gap: 20px;
     flex-wrap: wrap;
     margin-top: 30px;
     margin-bottom: 20px;
     justify-content: center;
 }
 
-swiper-container {
+.mySwiper {
     width: 99%;
-    height: 400px;
+    height: 250px;
+    position: relative;
+}
+
+.mySwiper p {
+    font-size: 14px;
+    color: #cacaca;
+    position: absolute;
+    top: 20px;
+    left: 30px;
 }
 
 swiper-slide {
@@ -201,7 +197,7 @@ swiper-slide {
 
 .swiper-img {
     height: auto;
-    width: 500px;
+    width: 325px;
     border-radius: 30px;
 }
 
@@ -213,7 +209,7 @@ swiper-slide {
 
 .project-h3 {
     width: 100%;
-    padding: 10px 0px 10px 20px;
+    padding: 0px 0px 10px 20px;
     position: absolute;
     bottom: 0;
     background-color: #000000;
@@ -237,18 +233,6 @@ swiper-slide {
 .infos-project:hover {
     opacity: 0.90;
     background-color: #000000;
-}
-
-.projects-txt {
-    font-size: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    margin-top: 5%;
-    line-height: 50px;
-    color: #ffffff;
 }
 
 .curriculo {
@@ -354,9 +338,11 @@ swiper-slide {
     background-color: #000;
     height: 300px;
     width: 100%;
+}
+
+.footer-up {
     display: flex;
     justify-content: center;
-    position: relative;
     gap: 100px;
     bottom: 0;
     margin-top: 5%;
@@ -391,10 +377,14 @@ swiper-slide {
     text-decoration: underline;
 }
 
+.footer-down {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
 .footer-mark {
-    position: absolute;
     color: #3a3a3a;
-    margin: 0 auto;
     bottom: 20px;
     font-size: 14px;
 }
@@ -450,20 +440,9 @@ swiper-slide {
     }
 }
 
-@media screen and (max-width: 1600px) {
-    .home h1 {
-        font-size: 80px;
-    }
-
-    .p-infos {
-        font-size: 16px;
-    }
-}
-
 @media screen and (max-width: 1030px) {
     .home {
         width: 80%;
-        min-height: 75vh;
         flex-direction: column;
         justify-content: center;
         text-align: center;
@@ -481,8 +460,21 @@ swiper-slide {
         width: 350px;
     }
 
-    swiper-container {
+    .title {
+        margin-top: 100px;
+        padding-top: 50px;
+    }
+
+    .projects-swiper {
+        height: 100vh;
+    }
+
+    .mySwiper {
         width: 98%;
+    }
+
+    .container-projects {
+        margin-top: 50px;
     }
 
     .curriculo {
@@ -528,8 +520,13 @@ swiper-slide {
         width: 300px;
     }
 
+    .title {
+        margin-top: 0px;
+        padding-top: 20px;
+    }
+
     .projects-swiper {
-        padding: 10px 0;
+        padding: 0px 0;
     }
 
     .nav-projects {
@@ -594,10 +591,13 @@ swiper-slide {
     }
 
     .footer {
-        padding: 0 40px 0;
-        width: 100%;
+        padding: 20px 10px 50px;
+        height: auto;
+    }
+
+    .footer-up {
         gap: 10px;
-        height: 350px;
+        flex-direction: column;
     }
 
     .footer h3 {
@@ -607,5 +607,9 @@ swiper-slide {
     .footer-left,
     .footer-right {
         font-size: 16px;
+    }
+
+    .footer-down {
+        margin-top: 60px;
     }
 }
