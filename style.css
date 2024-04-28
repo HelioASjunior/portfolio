@@ -503,8 +503,7 @@ swiper-slide {
     }
 
     .home {
-        margin-top: -25px;
-        margin-top: -25px;
+        margin-top: -50px;
         width: 90%;
         min-height: 75vh;
     }
@@ -573,7 +572,7 @@ swiper-slide {
     }
 
     .curriculo {
-        margin: -15px 0 50px;
+        margin: 100px 0 50px;
         padding-top: 100px;
     }
 
@@ -603,6 +602,7 @@ swiper-slide {
 
     .footer h3 {
         font-size: 16px;
+        margin-bottom: 15px;
     }
 
     .footer-left,
