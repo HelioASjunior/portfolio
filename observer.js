@@ -14,6 +14,11 @@ elementsLeft.forEach((element) => {
     myObserver.observe(element)
 })
 
+const elementsLeftSwiper = document.querySelectorAll('.hidden-left-swiper')
+elementsLeftSwiper.forEach((element) => {
+    myObserver.observe(element)
+})
+
 const elementsRight = document.querySelectorAll('.hidden-right')
 elementsRight.forEach((element) => {
     myObserver.observe(element)
@@ -21,5 +26,10 @@ elementsRight.forEach((element) => {
 
 const containers = document.querySelectorAll('.hidden')
 containers.forEach((container) => {
+    myObserver.observe(container)
+})
+
+const curriculo = document.querySelectorAll('.hidden-curriculo')
+curriculo.forEach((container) => {
     myObserver.observe(container)
 })

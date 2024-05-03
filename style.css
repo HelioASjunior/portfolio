@@ -411,11 +411,24 @@ swiper-slide {
     transform: translateX(-50%);
 }
 
+.hidden-left-swiper {
+    opacity: 0;
+    transition: all 1s;
+    filter: blur(15px);
+    transform: translateX(-50%);
+}
+
 .hidden-right {
     opacity: 0;
     transition: all 1s;
     filter: blur(15px);
     transform: translateX(50%);
+}
+
+.hidden-curriculo {
+    opacity: 0;
+    transition: all 1s;
+    filter: blur(15px);
 }
 
 .show {
@@ -497,6 +510,26 @@ swiper-slide {
     .footer-left,
     .footer-right {
         margin-left: 50px;
+    }
+
+    .hidden-left-swiper {
+        opacity: 1;
+        transition: all 0s;
+        filter: blur(0px);
+        transform: translateX(0%);
+    }
+
+    .hidden-right {
+        opacity: 1;
+        transition: all 0s;
+        filter: blur(0px);
+        transform: translateX(0%);
+    }
+
+    .hidden-curriculo {
+        opacity: 1;
+        transition: all 0s;
+        filter: blur(0px);
     }
 }
 
