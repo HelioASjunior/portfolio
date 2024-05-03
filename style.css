@@ -401,13 +401,21 @@ swiper-slide {
     opacity: 0;
     transition: all 1s;
     filter: blur(15px);
+    rotate: -90deg;
 }
 
 .hidden-left {
     opacity: 0;
     transition: all 1s;
     filter: blur(15px);
-    transform: translateX(-100%);
+    transform: translateX(-50%);
+}
+
+.hidden-right {
+    opacity: 0;
+    transition: all 1s;
+    filter: blur(15px);
+    transform: translateX(50%);
 }
 
 .show {
@@ -415,6 +423,7 @@ swiper-slide {
     transition: all 1s;
     filter: blur(0px);
     transform: translateX(0%);
+    rotate: 0deg;
 }
 
 @keyframes gradient-animation {
