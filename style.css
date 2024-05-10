@@ -10,7 +10,7 @@ body {
     width: 100vw;
     min-height: 100vh;
     height: 100%;
-    background: linear-gradient(150deg, #000000, #7d0964);
+    background-color: #000;
     background-size: 120% 120%;
     font-family: "Raleway", sans-serif;
     overflow-x: hidden;
@@ -66,6 +66,7 @@ header {
     padding: 0 15px;
     max-width: 60%;
     max-width: 60%;
+    text-shadow: 0 5px 10px #0004;
 }
 
 .home h1 {
@@ -161,6 +162,7 @@ i:hover {
     padding-top: 40px;
     text-transform: uppercase;
     color: #ffffff;
+    text-shadow: 0 5px 10px #0004;
 }
 
 .span-title {
@@ -173,6 +175,7 @@ i:hover {
     margin-top: 30px;
     margin-bottom: 20px;
     justify-content: center;
+    text-shadow: 0 5px 10px #0004;
 }
 
 .mySwiper {
@@ -185,6 +188,7 @@ i:hover {
     color: #cacaca;
     margin-top: 20px;
     margin-bottom: -35px;
+    text-shadow: 0 5px 10px #0004;
 }
 
 swiper-slide {
@@ -294,6 +298,11 @@ swiper-slide {
 
 .btn-curriculo:active {
     opacity: 0.5;
+}
+
+.width-curriculo {
+    width: 510px;
+    height: 700px;
 }
 
 .container-curriculo {
@@ -450,6 +459,42 @@ swiper-slide {
 
     100% {
         background-position: 0% 50%;
+    }
+}
+
+.preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -9;
+    animation: fadeOutAnimation ease 30s;
+    animation-fill-mode: forwards;
+    transition: all 2s ease-in-out;
+}
+
+.video-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -99;
+}
+
+.mascara {
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(109deg, rgba(10, 12, 16, 0.99) 15%, rgba(10, 12, 16, 0.8) 60%, rgba(10, 12, 16, 0.99) 85%);
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
+
+@keyframes fadeOutAnimation {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
     }
 }
 
