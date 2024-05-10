@@ -300,11 +300,6 @@ swiper-slide {
     opacity: 0.5;
 }
 
-.width-curriculo {
-    width: 510px;
-    height: 700px;
-}
-
 .container-curriculo {
     overflow: hidden;
     border-radius: 30px;
