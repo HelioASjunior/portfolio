@@ -459,20 +459,6 @@ swiper-slide {
     rotate: 0deg;
 }
 
-@keyframes gradient-animation {
-    0% {
-        background-position: 0% 50%;
-    }
-
-    50% {
-        background-position: 100% 50%;
-    }
-
-    100% {
-        background-position: 0% 50%;
-    }
-}
-
 .preloader {
     position: fixed;
     top: 0;
@@ -497,6 +483,27 @@ swiper-slide {
     position: fixed;
     top: 0;
     z-index: 1;
+}
+
+.video-bg-tablet,
+.preloader-tablet,
+.video-bg-mobile,
+.preloader-mobile {
+    display: none;
+}
+
+@keyframes gradient-animation {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
 }
 
 @keyframes fadeOutAnimation {
@@ -655,6 +662,31 @@ swiper-slide {
         transition: all 0s;
         filter: blur(0px);
     }
+
+
+    .preloader,
+    .video-bg {
+        display: none;
+    }
+
+    .preloader-tablet {
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: -9;
+        animation: fadeOutAnimation ease 30s;
+        animation-fill-mode: forwards;
+        transition: all 2s ease-in-out;
+    }
+
+    .video-bg-tablet {
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: -99;
+    }
 }
 
 @media screen and (max-width: 500px) {
@@ -780,6 +812,30 @@ swiper-slide {
 
     .footer-down {
         margin-top: 60px;
+    }
+
+    .preloader-tablet,
+    .video-bg-tablet {
+        display: none;
+    }
+
+    .preloader-mobile {
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: -9;
+        animation: fadeOutAnimation ease 30s;
+        animation-fill-mode: forwards;
+        transition: all 2s ease-in-out;
+    }
+
+    .video-bg-mobile {
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: -99;
     }
 }
 
