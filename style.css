@@ -72,6 +72,10 @@ header {
     position: relative;
     padding-top: 100px;
     gap: 50px;
+
+    a {
+        color: #ff00c8;
+    }
 }
 
 .infos {
