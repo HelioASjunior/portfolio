@@ -401,46 +401,35 @@ swiper-slide {
     z-index: 99;
 }
 
+.hidden,
+.hidden-left,
+.hidden-left-swiper,
+.hidden-right,
+.hidden-curriculo {
+    opacity: 0;
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
 .hidden {
-    opacity: 0;
-    transition: all 1s;
-    filter: blur(15px);
-    rotate: -90deg;
+    transform: scale(0.95);
 }
 
-.hidden-left {
-    opacity: 0;
-    transition: all 1s;
-    filter: blur(15px);
-    transform: translateX(-50%);
-}
-
+.hidden-left,
 .hidden-left-swiper {
-    opacity: 0;
-    transition: all 1s;
-    filter: blur(15px);
-    transform: translateX(-50%);
+    transform: translateX(-50px);
 }
 
 .hidden-right {
-    opacity: 0;
-    transition: all 1s;
-    filter: blur(15px);
-    transform: translateX(50%);
+    transform: translateX(50px);
 }
 
 .hidden-curriculo {
-    opacity: 0;
-    transition: all 1s;
-    filter: blur(15px);
+    transform: translateY(30px);
 }
 
 .show {
     opacity: 1;
-    transition: all 1s;
-    filter: blur(0px);
-    transform: translateX(0%);
-    rotate: 0deg;
+    transform: none;
 }
 
 .preloader {
@@ -608,15 +597,14 @@ swiper-slide {
     .hidden-left-swiper,
     .hidden-right {
         opacity: 1;
-        transition: all 0s;
-        filter: blur(0px);
-        transform: translateX(0%);
+        transition: none;
+        transform: none;
     }
 
     .hidden-curriculo {
         opacity: 1;
-        transition: all 0s;
-        filter: blur(0px);
+        transition: none;
+        transform: none;
     }
 
     .preloader,

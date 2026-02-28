@@ -1,22 +1,23 @@
 const swiperElements = document.querySelectorAll(".mySwiper");
 
-function getSlidesPerView() {
-    const width = screen.width;
-    if (width < 500) return 1.2;
-    if (width < 1030) return 2;
-    if (width < 1600) return 4;
-    return 5;
-}
-
 swiperElements.forEach((swiper) => {
     const params = {
         centeredSlides: false,
         slidesPerGroupSkip: 1,
         grabCursor: true,
         keyboard: { enabled: true },
+        slidesPerView: 1.2,
         breakpoints: {
-            769: {
-                slidesPerView: getSlidesPerView(),
+            500: {
+                slidesPerView: 2,
+                slidesPerGroup: 2,
+            },
+            1030: {
+                slidesPerView: 4,
+                slidesPerGroup: 2,
+            },
+            1600: {
+                slidesPerView: 5,
                 slidesPerGroup: 2,
             },
         },
