@@ -25,8 +25,11 @@ header {
     position: fixed;
     width: 100vw;
     z-index: 999;
-    background-color: rgb(0, 0, 0);
-    box-shadow: 0px -5px 10px 15px rgba(0, 0, 0, 0.68);
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
 
     .mobile-menu {
         display: none;
@@ -55,7 +58,8 @@ header {
     }
 
     a:hover {
-        color: #ffffff;
+        color: #ff00c8;
+        text-shadow: 0 0 10px rgba(255, 0, 200, 0.3);
     }
 }
 
@@ -128,6 +132,7 @@ ul {
     color: #ff00c8;
     border-color: #ff00c8;
     transform: scale(1.1);
+    box-shadow: 0 0 15px rgba(255, 0, 200, 0.4), inset 0 0 15px rgba(255, 0, 200, 0.1);
 }
 
 .a-social-media {
@@ -218,13 +223,22 @@ swiper-slide {
 .swiper-img {
     height: auto;
     width: 325px;
-    border-radius: 30px;
+    border-radius: 20px;
 }
 
 .project {
     position: relative;
     margin-top: 20px;
     left: 0;
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    overflow: hidden;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.project:hover {
+    border-color: rgba(255, 0, 200, 0.4);
+    box-shadow: 0 0 20px rgba(255, 0, 200, 0.15);
 }
 
 .project-h3 {
@@ -232,8 +246,8 @@ swiper-slide {
     padding: 0px 0px 10px 20px;
     position: absolute;
     bottom: 0;
-    background-color: #000000;
-    border-radius: 0px 0px 30px 30px;
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.9));
+    border-radius: 0px 0px 20px 20px;
     color: #ffffff;
 }
 
@@ -243,20 +257,30 @@ swiper-slide {
 }
 
 .infos-project {
-    background-color: #040203;
+    background: rgba(0, 0, 0, 0.85);
+    backdrop-filter: blur(4px);
     position: absolute;
     top: 0;
     width: 100%;
-    height: 99%;
+    height: 100%;
     opacity: 0;
-    border-radius: 30px;
+    border-radius: 20px;
     padding: 20px;
-    transition: opacity 0.2s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    transition: opacity 0.3s ease;
 }
 
 .infos-project:hover {
-    opacity: 0.90;
-    background-color: #000000;
+    opacity: 1;
+}
+
+.p-reposit {
+    color: #ff00c8 !important;
+    font-size: 13px;
+    margin-top: 5px;
 }
 
 .curriculo {
@@ -317,6 +341,7 @@ swiper-slide {
 .btn-curriculo:hover {
     border-color: #ff00c8;
     color: #ff00c8;
+    box-shadow: 0 0 20px rgba(255, 0, 200, 0.3);
 }
 
 .btn-curriculo:active {
@@ -330,8 +355,8 @@ swiper-slide {
 }
 
 .container-curriculo:hover {
-    box-shadow: 0 0 8px #e6dd96;
-    border: solid 1px #ffffff;
+    box-shadow: 0 0 20px rgba(255, 0, 200, 0.3);
+    border: solid 1px #ff00c8;
 }
 
 .curriculo-img {
@@ -436,6 +461,7 @@ swiper-slide {
 .btn-contato:hover {
     background: #1ebe5a;
     transform: scale(1.03);
+    box-shadow: 0 0 25px rgba(37, 211, 102, 0.4);
 }
 
 .btn-contato i {
@@ -463,6 +489,7 @@ swiper-slide {
 
 .contato-card:hover {
     border-color: #ff00c8;
+    box-shadow: 0 0 15px rgba(255, 0, 200, 0.15);
 }
 
 .contato-card i {
