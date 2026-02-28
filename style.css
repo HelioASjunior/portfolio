@@ -339,6 +339,142 @@ swiper-slide {
     transform: scale(1.1);
 }
 
+/* Contato */
+
+.contato {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 80px;
+    padding: 100px 10%;
+    background: linear-gradient(180deg, #000 0%, #0a0a0a 50%, #000 100%);
+}
+
+.contato-container {
+    flex: 1;
+    max-width: 500px;
+}
+
+.contato-title {
+    font-size: 42px;
+    font-weight: 500;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.contato-subtitle {
+    color: #a0a0a0;
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+
+.contato-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.form-group label {
+    color: #a0a0a0;
+    font-size: 14px;
+}
+
+.form-group input,
+.form-group textarea {
+    background: #111;
+    border: 1px solid #2a2a2a;
+    border-radius: 10px;
+    padding: 14px 16px;
+    color: #fff;
+    font-family: "Raleway", sans-serif;
+    font-size: 15px;
+    outline: none;
+    transition: border-color 0.3s;
+    resize: vertical;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: #555;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #ff00c8;
+}
+
+.btn-contato {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background: #25d366;
+    border: none;
+    border-radius: 30px;
+    padding: 16px;
+    font-size: 17px;
+    font-family: "Raleway", sans-serif;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s;
+}
+
+.btn-contato:hover {
+    background: #1ebe5a;
+    transform: scale(1.03);
+}
+
+.btn-contato i {
+    font-size: 22px;
+}
+
+.contato-info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 60px;
+}
+
+.contato-card {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    background: #111;
+    border: 1px solid #2a2a2a;
+    border-radius: 14px;
+    padding: 20px 24px;
+    transition: border-color 0.3s;
+}
+
+.contato-card:hover {
+    border-color: #ff00c8;
+}
+
+.contato-card i {
+    color: #ff00c8;
+    font-size: 24px;
+    min-width: 30px;
+    text-align: center;
+}
+
+.contato-card p,
+.contato-card a {
+    color: #fff;
+    font-size: 15px;
+    text-decoration: none;
+}
+
+.contato-card a:hover {
+    text-decoration: underline;
+}
+
 .footer {
     background-color: #000;
     width: 100%;
@@ -630,6 +766,27 @@ swiper-slide {
         left: 0;
         z-index: -99;
     }
+
+    .contato {
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+        padding: 80px 5%;
+    }
+
+    .contato-container {
+        max-width: 100%;
+    }
+
+    .contato-title {
+        font-size: 34px;
+    }
+
+    .contato-info {
+        margin-top: 0;
+        width: 100%;
+        max-width: 500px;
+    }
 }
 
 @media screen and (max-width: 500px) {
@@ -725,6 +882,28 @@ swiper-slide {
     .curriculo-img {
         width: 350px;
         border-radius: 20px;
+    }
+
+    .contato {
+        padding: 60px 20px;
+        gap: 30px;
+    }
+
+    .contato-title {
+        font-size: 28px;
+    }
+
+    .contato-subtitle {
+        font-size: 14px;
+    }
+
+    .contato-card {
+        padding: 16px 18px;
+    }
+
+    .contato-card p,
+    .contato-card a {
+        font-size: 13px;
     }
 
     .footer {

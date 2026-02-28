@@ -43,7 +43,7 @@
                 <a href="#home">Início</a>
                 <a href="#projetos">Projetos</a>
                 <a href="#curriculo">Currículo</a>
-                <a href="#footer">Contato</a>
+                <a href="#contato">Contato</a>
             </nav>
 
         </header>
@@ -734,7 +734,7 @@
             <div class="container-download-curriculo hidden-left-swiper">
                 <h2>Currículo Felipe Ryo</h2>
                 <h3>Desenvolvedor Full Stack</h3>
-                <h4>JavaScript | React | Node.js | HTML5 | CSS3 | Tailwind | C# | .NET | GitHub | Figma</h4>
+                <h4>JavaScript | React | Node.js | HTML5 | CSS3 | Tailwind | GitHub | Figma</h4>
                 <a class="btn-curriculo" href="./assets/curriculo/Felipe_Ryo_Node_FullStack.pdf"
                     download="Felipe_Ryo_Node_FullStack.pdf">Baixar
                     arquivo
@@ -749,6 +749,53 @@
 
         </section>
 
+        <section class="contato" id="contato">
+            <div class="contato-container hidden-left">
+                <h2 class="contato-title">Vamos <span class="span-title">conversar?</span></h2>
+                <p class="contato-subtitle">Preencha o formulário e envie direto para o meu WhatsApp.</p>
+
+                <form class="contato-form" id="contato-form">
+                    <div class="form-group">
+                        <label for="nome">Nome</label>
+                        <input type="text" id="nome" name="nome" placeholder="Seu nome" required />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="empresa">Empresa</label>
+                        <input type="text" id="empresa" name="empresa" placeholder="Sua empresa (opcional)" />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="mensagem">Mensagem</label>
+                        <textarea id="mensagem" name="mensagem" rows="4" placeholder="Escreva sua mensagem..." required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn-contato">
+                        <i class="fa-brands fa-whatsapp"></i> Enviar pelo WhatsApp
+                    </button>
+                </form>
+            </div>
+
+            <div class="contato-info hidden-right">
+                <div class="contato-card">
+                    <i class="fa-brands fa-whatsapp"></i>
+                    <p>(11) 97282-1988</p>
+                </div>
+                <div class="contato-card">
+                    <i class="fa-solid fa-envelope"></i>
+                    <p>ryofeliperyo@gmail.com</p>
+                </div>
+                <div class="contato-card">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                    <a href="https://www.linkedin.com/in/feliperyo/" target="_blank">linkedin.com/in/feliperyo</a>
+                </div>
+                <div class="contato-card">
+                    <i class="fa-brands fa-github"></i>
+                    <a href="https://github.com/feliperyo" target="_blank">github.com/feliperyo</a>
+                </div>
+            </div>
+        </section>
+
         <section class="footer" id="footer">
 
             <div class="footer-up">
@@ -759,7 +806,7 @@
                     <a class="a-footer" href="#home">Início</a>
                     <a class="a-footer" href="#projetos">Projetos</a>
                     <a class="a-footer" href="#curriculo">Currículo</a>
-                    <p>Contato</p>
+                    <a class="a-footer" href="#contato">Contato</a>
 
                 </div>
 
@@ -869,6 +916,22 @@
     <script src="./responsiveness.js"></script>
     <script src="./observer.js"></script>
     <script src="./mobile-navbar.js"></script>
+
+    <script>
+        document.getElementById("contato-form").addEventListener("submit", function (e) {
+            e.preventDefault();
+            const nome = document.getElementById("nome").value.trim();
+            const empresa = document.getElementById("empresa").value.trim();
+            const mensagem = document.getElementById("mensagem").value.trim();
+
+            let texto = `Olá Felipe! Meu nome é ${nome}.`;
+            if (empresa) texto += ` Sou da empresa ${empresa}.`;
+            texto += `\n\n${mensagem}`;
+
+            const url = `https://wa.me/5511972821988?text=${encodeURIComponent(texto)}`;
+            window.open(url, "_blank");
+        });
+    </script>
 
 </body>
 
