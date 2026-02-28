@@ -290,9 +290,13 @@ swiper-slide {
     justify-content: center;
     gap: 200px;
     align-items: center;
-    background-color: #000;
+    background: radial-gradient(ellipse at 20% 50%, rgba(255, 0, 200, 0.06) 0%, transparent 50%),
+                radial-gradient(ellipse at 80% 50%, rgba(148, 67, 216, 0.06) 0%, transparent 50%),
+                #050505;
     position: relative;
     z-index: 2;
+    border-top: 1px solid rgba(255, 0, 200, 0.1);
+    border-bottom: 1px solid rgba(148, 67, 216, 0.1);
 }
 
 .container-download-curriculo {
@@ -321,7 +325,7 @@ swiper-slide {
 
 .btn-curriculo {
     background: none;
-    border: 1px solid #ffffff;
+    border: 1px solid #ff00c8;
     border-radius: 30px;
     width: 250px;
     padding: 15px;
@@ -335,13 +339,15 @@ swiper-slide {
     margin-top: 30px;
     color: #ffffff;
     text-decoration: none;
-    transition: color 0.3s, border-color 0.3s;
+    transition: color 0.3s, border-color 0.3s, box-shadow 0.3s;
+    animation: pulse-glow 2.5s ease-in-out infinite;
 }
 
 .btn-curriculo:hover {
     border-color: #ff00c8;
     color: #ff00c8;
-    box-shadow: 0 0 20px rgba(255, 0, 200, 0.3);
+    box-shadow: 0 0 30px rgba(255, 0, 200, 0.5), 0 0 60px rgba(255, 0, 200, 0.2);
+    animation: none;
 }
 
 .btn-curriculo:active {
@@ -647,6 +653,15 @@ swiper-slide {
 .video-bg-mobile,
 .preloader-mobile {
     display: none;
+}
+
+@keyframes pulse-glow {
+    0%, 100% {
+        box-shadow: 0 0 5px rgba(255, 0, 200, 0.15);
+    }
+    50% {
+        box-shadow: 0 0 20px rgba(255, 0, 200, 0.4), 0 0 40px rgba(255, 0, 200, 0.15);
+    }
 }
 
 @keyframes gradient-animation {
