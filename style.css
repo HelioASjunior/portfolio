@@ -278,7 +278,7 @@ swiper-slide {
 }
 
 .p-reposit {
-    color: #ff00c8 !important;
+    color: #ff00c8;
     font-size: 13px;
     margin-top: 5px;
 }
@@ -569,7 +569,6 @@ swiper-slide {
 
 .footer-mark {
     color: #3a3a3a;
-    bottom: 20px;
     font-size: 14px;
 }
 

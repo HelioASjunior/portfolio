@@ -35,6 +35,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
+    <link rel="preload" as="image" href="./assets/perfil/perfil-no-bg.webp">
+
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
@@ -921,6 +923,7 @@
 
     <div class="video-bg-tablet">
         <video autoplay muted loop playsinline preload="auto">
+            <source src="./assets/bg/video-bg-tablet.webm" type="video/webm">
             <source src="./assets/bg/video-bg-tablet.mp4" type="video/mp4">
         </video>
         <div class="mascara"></div>
@@ -950,23 +953,24 @@
         <div class="mascara"></div>
     </div>
 
-    <script src="./responsiveness.js"></script>
-    <script src="./observer.js"></script>
-    <script src="./mobile-navbar.js"></script>
+    <script src="./responsiveness.js" defer></script>
+    <script src="./observer.js" defer></script>
+    <script src="./mobile-navbar.js" defer></script>
 
-    <script>
-        document.getElementById("contato-form").addEventListener("submit", function (e) {
-            e.preventDefault();
-            const nome = document.getElementById("nome").value.trim();
-            const empresa = document.getElementById("empresa").value.trim();
-            const mensagem = document.getElementById("mensagem").value.trim();
+    <script defer>
+        document.addEventListener("DOMContentLoaded", function () {
+            document.getElementById("contato-form").addEventListener("submit", function (e) {
+                e.preventDefault();
+                const nome = document.getElementById("nome").value.trim();
+                const empresa = document.getElementById("empresa").value.trim();
+                const mensagem = document.getElementById("mensagem").value.trim();
 
-            let texto = `Olá Felipe! Meu nome é ${nome}.`;
-            if (empresa) texto += ` Sou da empresa ${empresa}.`;
-            texto += `\n\n${mensagem}`;
+                let texto = "Olá Felipe! Meu nome é " + nome + ".";
+                if (empresa) texto += " Sou da empresa " + empresa + ".";
+                texto += "\n\n" + mensagem;
 
-            const url = `https://wa.me/5511972821988?text=${encodeURIComponent(texto)}`;
-            window.open(url, "_blank");
+                window.open("https://wa.me/5511972821988?text=" + encodeURIComponent(texto), "_blank");
+            });
         });
     </script>
 
