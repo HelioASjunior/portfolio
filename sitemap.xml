@@ -1,9 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
     <url>
         <loc>https://feliperyo.github.io/first-portfolio/</loc>
         <lastmod>2025-03-01</lastmod>
         <changefreq>monthly</changefreq>
         <priority>1.0</priority>
+        <image:image>
+            <image:loc>https://feliperyo.github.io/first-portfolio/assets/perfil/perfil-no-bg.webp</image:loc>
+            <image:title>Felipe Ryo - Desenvolvedor Full Stack</image:title>
+            <image:caption>Foto profissional de Felipe Ryo, Desenvolvedor Full Stack especializado em React e Node.js</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>https://feliperyo.github.io/first-portfolio/assets/curriculo/curriculo-img.jpg</image:loc>
+            <image:title>Currículo Felipe Ryo - Desenvolvedor Full Stack</image:title>
+            <image:caption>Currículo profissional de Felipe Ryo com experiência em JavaScript, React e Node.js</image:caption>
+        </image:image>
     </url>
 </urlset>

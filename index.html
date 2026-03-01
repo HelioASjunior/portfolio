@@ -28,8 +28,15 @@
     <meta name="twitter:image" content="https://feliperyo.github.io/first-portfolio/assets/perfil/perfil-no-bg.webp">
 
     <meta name="theme-color" content="#ff00c8">
+    <meta name="color-scheme" content="dark">
+    <meta name="geo.region" content="BR-SP">
+    <meta name="geo.placename" content="São Paulo">
+    <meta name="language" content="pt-BR">
+    <meta name="rating" content="general">
+    <meta name="revisit-after" content="7 days">
 
     <link rel="shortcut icon" href="./assets/favicon-16x16.png" type="image/png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon-16x16.png">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -44,38 +51,126 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js" defer></script>
 
     <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "Person",
-        "name": "Felipe Ryo",
-        "jobTitle": "Desenvolvedor Full Stack",
-        "url": "https://feliperyo.github.io/first-portfolio/",
-        "image": "https://feliperyo.github.io/first-portfolio/assets/perfil/perfil-no-bg.webp",
-        "email": "ryofeliperyo@gmail.com",
-        "telephone": "+55-11-97282-1988",
-        "address": {
-            "@type": "PostalAddress",
-            "addressLocality": "São Paulo",
-            "addressRegion": "SP",
-            "addressCountry": "BR"
+    [
+        {
+            "@context": "https://schema.org",
+            "@type": "ProfilePage",
+            "mainEntity": {
+                "@type": "Person",
+                "@id": "https://feliperyo.github.io/first-portfolio/#felipe-ryo",
+                "name": "Felipe Ryo",
+                "givenName": "Felipe",
+                "familyName": "Ryo",
+                "jobTitle": "Desenvolvedor Full Stack",
+                "url": "https://feliperyo.github.io/first-portfolio/",
+                "image": {
+                    "@type": "ImageObject",
+                    "url": "https://feliperyo.github.io/first-portfolio/assets/perfil/perfil-no-bg.webp",
+                    "width": 450,
+                    "height": 450
+                },
+                "email": "ryofeliperyo@gmail.com",
+                "telephone": "+55-11-97282-1988",
+                "address": {
+                    "@type": "PostalAddress",
+                    "addressLocality": "São Paulo",
+                    "addressRegion": "SP",
+                    "addressCountry": "BR"
+                },
+                "nationality": {
+                    "@type": "Country",
+                    "name": "Brasil"
+                },
+                "sameAs": [
+                    "https://www.linkedin.com/in/feliperyo/",
+                    "https://github.com/feliperyo",
+                    "https://www.behance.net/feliperyo"
+                ],
+                "knowsAbout": [
+                    "JavaScript", "TypeScript", "React", "React.js", "Node.js", "Express.js",
+                    "HTML5", "CSS3", "Tailwind CSS", "Git", "GitHub", "Figma",
+                    "Desenvolvimento Web", "Full Stack Development", "APIs REST",
+                    "Design Responsivo", "UX/UI Design", "Arquitetura de Software",
+                    "Banco de Dados", "MongoDB", "PostgreSQL", "Docker"
+                ],
+                "hasOccupation": {
+                    "@type": "Occupation",
+                    "name": "Full Stack Developer",
+                    "skills": "JavaScript, React, Node.js, HTML5, CSS3, Tailwind, Git, Figma",
+                    "occupationLocation": {
+                        "@type": "City",
+                        "name": "São Paulo"
+                    }
+                },
+                "description": "Desenvolvedor Full Stack especializado em React, Node.js e JavaScript. Experiência em aplicações web escaláveis, seguras e performáticas, integração de APIs, design responsivo e arquitetura de software.",
+                "alumniOf": {
+                    "@type": "EducationalOrganization",
+                    "name": "Universidade Paulista - UNIP"
+                }
+            }
         },
-        "sameAs": [
-            "https://www.linkedin.com/in/feliperyo/",
-            "https://github.com/feliperyo",
-            "https://www.behance.net/feliperyo"
-        ],
-        "knowsAbout": [
-            "JavaScript", "React", "Node.js", "HTML5", "CSS3",
-            "Tailwind CSS", "Git", "GitHub", "Figma",
-            "Desenvolvimento Web", "Full Stack", "APIs REST",
-            "Design Responsivo", "UX/UI"
-        ],
-        "description": "Desenvolvedor Full Stack especializado em React, Node.js e JavaScript. Experiência em aplicações web escaláveis, integração de APIs e design responsivo."
-    }
+        {
+            "@context": "https://schema.org",
+            "@type": "WebSite",
+            "name": "Portfólio Felipe Ryo",
+            "url": "https://feliperyo.github.io/first-portfolio/",
+            "description": "Portfólio profissional de Felipe Ryo — Desenvolvedor Full Stack",
+            "author": { "@id": "https://feliperyo.github.io/first-portfolio/#felipe-ryo" },
+            "inLanguage": "pt-BR"
+        },
+        {
+            "@context": "https://schema.org",
+            "@type": "ItemList",
+            "name": "Projetos de Desenvolvimento Web",
+            "description": "Portfólio de projetos web desenvolvidos por Felipe Ryo",
+            "numberOfItems": 30,
+            "itemListElement": [
+                {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "item": {
+                        "@type": "CreativeWork",
+                        "name": "PDRNskin",
+                        "description": "Site institucional desenvolvido com HTML, CSS e JavaScript",
+                        "url": "https://github.com/feliperyo/PDRNskin",
+                        "author": { "@id": "https://feliperyo.github.io/first-portfolio/#felipe-ryo" }
+                    }
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "item": {
+                        "@type": "CreativeWork",
+                        "name": "RyArt Design",
+                        "description": "Site de design e portfólio visual",
+                        "url": "https://github.com/feliperyo",
+                        "author": { "@id": "https://feliperyo.github.io/first-portfolio/#felipe-ryo" }
+                    }
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 3,
+                    "item": {
+                        "@type": "CreativeWork",
+                        "name": "Nihon Corretora de Seguros",
+                        "description": "Site institucional para corretora de seguros",
+                        "url": "https://github.com/feliperyo",
+                        "author": { "@id": "https://feliperyo.github.io/first-portfolio/#felipe-ryo" }
+                    }
+                }
+            ]
+        }
+    ]
     </script>
 </head>
 
 <body>
+
+    <noscript>
+        <p style="text-align:center;padding:20px;color:#fff;background:#111;">
+            Este portfólio requer JavaScript para funcionar corretamente. Por favor, habilite o JavaScript no seu navegador.
+        </p>
+    </noscript>
 
     <div>
 
@@ -109,26 +204,26 @@
                 <ul class="ul-social-medias">
                     <li class="li-social-medias">
                         <a class="a-social-media" href="https://www.linkedin.com/in/feliperyo/"
-                            title="Abrir LinkedIn de Felipe Ryo" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                            title="Abrir LinkedIn de Felipe Ryo" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i></a>
                     </li>
                     <li class="li-social-medias">
                         <a class="a-social-media" href="https://github.com/feliperyo" title="Abrir GitHub de Felipe Ryo"
-                            target="_blank">
+                            target="_blank" rel="noopener noreferrer">
                             <i class="fab fa-github"></i></a>
                     </li>
                     <li class="li-social-medias">
                         <a class="a-social-media" href="https://www.behance.net/feliperyo"
-                            title="Abrir Behance de Felipe Ryo" target="_blank">
+                            title="Abrir Behance de Felipe Ryo" target="_blank" rel="noopener noreferrer">
                             <i class="fab fa-behance"></i></a>
                     </li>
                     <li class="li-social-medias">
                         <a class="a-social-media" href="mailto:ryofeliperyo@gmail.com" type="Email"
-                            title="Enviar Email para Felipe Ryo" target="_blank">
+                            title="Enviar Email para Felipe Ryo" target="_blank" rel="noopener noreferrer">
                             <i class="devicon-google-plain"></i></a>
                     </li>
                     <li class="li-social-medias">
                         <a class="a-social-media" href="https://wa.me/551172821988"
-                            title="Enviar mensagem no WhatsApp para Felipe Ryo" target="_blank">
+                            title="Enviar mensagem no WhatsApp para Felipe Ryo" target="_blank" rel="noopener noreferrer">
                             <i class="fab fa-whatsapp"></i></a>
                     </li>
                 </ul>
