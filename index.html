@@ -5,41 +5,86 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+    <title>Felipe Ryo | Desenvolvedor Full Stack | React, Node.js, JavaScript</title>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
+    <meta name="description" content="Portfólio de Felipe Ryo — Desenvolvedor Full Stack especializado em React, Node.js, JavaScript, HTML, CSS e Tailwind. Experiência em aplicações web escaláveis, integração de APIs e design responsivo. Disponível para oportunidades.">
+    <meta name="keywords" content="Felipe Ryo, desenvolvedor full stack, desenvolvedor web, frontend, backend, React, React.js, Node.js, JavaScript, HTML, CSS, Tailwind, portfólio, desenvolvedor São Paulo, developer, full stack developer, programador, freelancer, contratação, currículo desenvolvedor">
+    <meta name="author" content="Felipe Ryo">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+    <link rel="canonical" href="https://feliperyo.github.io/first-portfolio/">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Felipe Ryo | Desenvolvedor Full Stack | React, Node.js, JavaScript">
+    <meta property="og:description" content="Desenvolvedor Full Stack especializado em React, Node.js e JavaScript. Confira meus projetos e entre em contato para oportunidades.">
+    <meta property="og:image" content="https://feliperyo.github.io/first-portfolio/assets/perfil/perfil-no-bg.webp">
+    <meta property="og:image:alt" content="Foto de Felipe Ryo - Desenvolvedor Full Stack">
+    <meta property="og:url" content="https://feliperyo.github.io/first-portfolio/">
+    <meta property="og:site_name" content="Portfólio Felipe Ryo">
+    <meta property="og:locale" content="pt_BR">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Felipe Ryo | Desenvolvedor Full Stack">
+    <meta name="twitter:description" content="Portfólio de Felipe Ryo — Desenvolvedor Full Stack com React, Node.js e JavaScript. Projetos, currículo e contato.">
+    <meta name="twitter:image" content="https://feliperyo.github.io/first-portfolio/assets/perfil/perfil-no-bg.webp">
+
+    <meta name="theme-color" content="#ff00c8">
 
     <link rel="shortcut icon" href="./assets/favicon-16x16.png" type="image/png">
 
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="Felipe Ryo - Desenvolvedor Web Full-Stack">
-    <meta property="og:image" content="https://feliperyo.github.io/first-portfolio/assets/perfil/perfil-no-bg.webp">
-    <meta property="og:description" content="Portfólio de Desenvolvedor Web Full-Stack de Felipe Ryo">
-    <meta property="og:site_name" content="Portfólio Felipe Ryo">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
 
-    <title>Felipe Ryo - Desenvolvedor Web Full-Stack</title>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js" defer></script>
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Felipe Ryo",
+        "jobTitle": "Desenvolvedor Full Stack",
+        "url": "https://feliperyo.github.io/first-portfolio/",
+        "image": "https://feliperyo.github.io/first-portfolio/assets/perfil/perfil-no-bg.webp",
+        "email": "ryofeliperyo@gmail.com",
+        "telephone": "+55-11-97282-1988",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "São Paulo",
+            "addressRegion": "SP",
+            "addressCountry": "BR"
+        },
+        "sameAs": [
+            "https://www.linkedin.com/in/feliperyo/",
+            "https://github.com/feliperyo",
+            "https://www.behance.net/feliperyo"
+        ],
+        "knowsAbout": [
+            "JavaScript", "React", "Node.js", "HTML5", "CSS3",
+            "Tailwind CSS", "Git", "GitHub", "Figma",
+            "Desenvolvimento Web", "Full Stack", "APIs REST",
+            "Design Responsivo", "UX/UI"
+        ],
+        "description": "Desenvolvedor Full Stack especializado em React, Node.js e JavaScript. Experiência em aplicações web escaláveis, integração de APIs e design responsivo."
+    }
+    </script>
 </head>
 
 <body>
 
     <div>
 
-        <header>
-            <div class="mobile-menu">
+        <header role="banner">
+            <div class="mobile-menu" aria-label="Abrir menu de navegação">
                 <div class="line1"></div>
                 <div class="line2"></div>
                 <div class="line3"></div>
             </div>
 
-            <nav class="nav-list">
+            <nav class="nav-list" aria-label="Navegação principal">
                 <a href="#home">Início</a>
                 <a href="#projetos">Projetos</a>
                 <a href="#curriculo">Currículo</a>
@@ -48,7 +93,9 @@
 
         </header>
 
-        <section class="home" id="home">
+        <main>
+
+        <section class="home" id="home" aria-label="Sobre Felipe Ryo - Desenvolvedor Full Stack">
             <div class="infos hidden-left">
                 <h1>Olá, sou o <span class="span-title">
                         <br>Felipe Ryo!</span></h1>
@@ -87,12 +134,12 @@
             </div>
             <div class="container-perfil hidden">
                 <div class="perfil inner-shadow">
-                    <img class="img-perfil" src="./assets/perfil/perfil-no-bg.webp" alt="Foto de perfil Felipe Ryo" />
+                    <img class="img-perfil" src="./assets/perfil/perfil-no-bg.webp" alt="Felipe Ryo - Desenvolvedor Full Stack React Node.js" />
                 </div>
         </section>
 
 
-        <section id="projetos" class="projects-swiper">
+        <section id="projetos" class="projects-swiper" aria-label="Projetos de desenvolvimento web">
             <h2 class="title">Meus <span class="span-title">Projetos</span></h2>
 
             <div class="container-projects">
@@ -730,7 +777,7 @@
 
         </section>
 
-        <section class="curriculo" id="curriculo">
+        <section class="curriculo" id="curriculo" aria-label="Currículo para download">
             <div class="container-download-curriculo hidden-left-swiper">
                 <h2>Currículo Felipe Ryo</h2>
                 <h3>Desenvolvedor Full Stack</h3>
@@ -744,12 +791,12 @@
             <div class="container-curriculo hidden-curriculo">
                 <a href="./assets/curriculo/Felipe_Ryo_Node_FullStack.pdf" target="_blank"><img
                         class="curriculo-img" src="./assets/curriculo/curriculo-img.jpg"
-                        alt="Currículo Felipe Ryo" /></a>
+                        alt="Currículo Desenvolvedor Full Stack Felipe Ryo - React Node.js JavaScript" /></a>
             </div>
 
         </section>
 
-        <section class="contato" id="contato">
+        <section class="contato" id="contato" aria-label="Formulário de contato">
             <div class="contato-container hidden-left">
                 <h2 class="contato-title">Vamos <span class="span-title">conversar?</span></h2>
                 <p class="contato-subtitle">Preencha o formulário e envie direto para o meu WhatsApp.</p>
@@ -796,7 +843,9 @@
             </div>
         </section>
 
-        <section class="footer" id="footer">
+        </main>
+
+        <footer class="footer" id="footer" role="contentinfo">
 
             <div class="footer-up">
 
@@ -840,10 +889,10 @@
             </div>
 
             <div class="footer-down">
-                <p class="footer-mark">© 2024 Felipe Ryo</p>
+                <p class="footer-mark">© 2025 Felipe Ryo</p>
             </div>
 
-        </section>
+        </footer>
 
         <div class="whatsapp">
             <a href="https://wa.me/551172821988" target="_blank">
