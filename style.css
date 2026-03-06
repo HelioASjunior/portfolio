@@ -277,10 +277,47 @@ swiper-slide {
     opacity: 1;
 }
 
-.p-reposit {
-    color: #ff00c8;
-    font-size: 13px;
-    margin-top: 5px;
+.project-buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.btn-repo,
+.btn-deploy {
+    flex: 1;
+    padding: 8px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+    font-family: "Raleway", sans-serif;
+    text-decoration: none;
+    text-align: center;
+    transition: background 0.3s, box-shadow 0.3s, transform 0.3s;
+}
+
+.btn-repo {
+    background: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+}
+
+.btn-repo:hover {
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 12px rgba(255, 255, 255, 0.2);
+    transform: scale(1.05);
+}
+
+.btn-deploy {
+    background: #ff00c8;
+    border: 1px solid #ff00c8;
+    color: #fff;
+}
+
+.btn-deploy:hover {
+    background: #d400a8;
+    box-shadow: 0 0 15px rgba(255, 0, 200, 0.4);
+    transform: scale(1.05);
 }
 
 .curriculo {
