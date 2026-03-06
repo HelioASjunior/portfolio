@@ -1,5 +1,6 @@
 const projects = {
     trabalhos: [
+        { name: "Clothes Shop", tech: "E-commerce Fullstack | React + Node.js + PostgreSQL.", img: "clothes-ecommerce.webp", repo: "https://github.com/feliperyo/clothes-ecommerce", deploy: "https://clothes-ecommerce-umber.vercel.app/" },
         { name: "Design System - RyArt", tech: "Next.js com TypeScript.", img: "design-system-ryart.webp", repo: "https://github.com/feliperyo/ryart-designsystem", deploy: "https://ryart-designsystem.vercel.app/styleguide" },
         { name: "PDRNskin", tech: "HTML, CSS e JavaScript.", img: "pdrnskin.webp", repo: "https://github.com/feliperyo/PDRNskin", deploy: "https://pdrnskin.shop/" },
         { name: "RyArt Design", tech: "HTML, CSS e JavaScript.", img: "ryart.webp", repo: "https://github.com/feliperyo/ryart-design", deploy: "https://ryart.com.br/" },
