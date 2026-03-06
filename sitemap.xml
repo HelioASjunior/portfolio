@@ -7,7 +7,7 @@
         <changefreq>monthly</changefreq>
         <priority>1.0</priority>
         <image:image>
-            <image:loc>https://feliperyo.github.io/first-portfolio/assets/perfil/perfil-no-bg.webp</image:loc>
+            <image:loc>https://feliperyo.github.io/first-portfolio/assets/perfil/felipe-ryo-fullstack.webp</image:loc>
             <image:title>Felipe Ryo - Desenvolvedor Full Stack</image:title>
             <image:caption>Foto profissional de Felipe Ryo, Desenvolvedor Full Stack especializado em React e Node.js</image:caption>
         </image:image>
