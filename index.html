@@ -129,7 +129,7 @@
             "@type": "ItemList",
             "name": "Projetos de Desenvolvimento Web",
             "description": "Portfólio de projetos web desenvolvidos por Felipe Ryo",
-            "numberOfItems": 30,
+            "numberOfItems": 42,
             "itemListElement": [
                 {
                     "@type": "ListItem",
@@ -190,6 +190,7 @@
 
             <nav class="nav-list" aria-label="Navegação principal">
                 <a href="#home">Início</a>
+                <a href="#tecnologias">Tecnologias</a>
                 <a href="#projetos">Projetos</a>
                 <a href="#curriculo">Currículo</a>
                 <a href="#contato">Contato</a>
@@ -246,6 +247,65 @@
                         <img class="img-perfil" src="./assets/perfil/felipe-ryo-fullstack.webp"
                             alt="Felipe Ryo - Desenvolvedor Full Stack React Node.js" />
                     </div>
+                </div>
+
+                <div class="scroll-indicator" aria-hidden="true">
+                    <span></span>
+                </div>
+            </section>
+
+            <section class="tech-stack" id="tecnologias" aria-label="Tecnologias e ferramentas">
+                <h2 class="title">Minhas <span class="span-title">Tecnologias</span></h2>
+                <div class="tech-grid hidden-curriculo">
+                    <div class="tech-item">
+                        <i class="devicon-javascript-plain colored"></i>
+                        <span>JavaScript</span>
+                    </div>
+                    <div class="tech-item">
+                        <i class="devicon-typescript-plain colored"></i>
+                        <span>TypeScript</span>
+                    </div>
+                    <div class="tech-item">
+                        <i class="devicon-react-original colored"></i>
+                        <span>React</span>
+                    </div>
+                    <div class="tech-item">
+                        <i class="devicon-nextjs-plain"></i>
+                        <span>Next.js</span>
+                    </div>
+                    <div class="tech-item">
+                        <i class="devicon-nodejs-plain colored"></i>
+                        <span>Node.js</span>
+                    </div>
+                    <div class="tech-item">
+                        <i class="devicon-html5-plain colored"></i>
+                        <span>HTML5</span>
+                    </div>
+                    <div class="tech-item">
+                        <i class="devicon-css3-plain colored"></i>
+                        <span>CSS3</span>
+                    </div>
+                    <div class="tech-item">
+                        <i class="devicon-tailwindcss-original colored"></i>
+                        <span>Tailwind</span>
+                    </div>
+                    <div class="tech-item">
+                        <i class="devicon-git-plain colored"></i>
+                        <span>Git</span>
+                    </div>
+                    <div class="tech-item">
+                        <i class="devicon-github-original"></i>
+                        <span>GitHub</span>
+                    </div>
+                    <div class="tech-item">
+                        <i class="devicon-figma-plain colored"></i>
+                        <span>Figma</span>
+                    </div>
+                    <div class="tech-item">
+                        <i class="devicon-postgresql-plain colored"></i>
+                        <span>PostgreSQL</span>
+                    </div>
+                </div>
             </section>
 
 
@@ -344,6 +404,7 @@
                     <h3>Navegar</h3>
 
                     <a class="a-footer" href="#home">Início</a>
+                    <a class="a-footer" href="#tecnologias">Tecnologias</a>
                     <a class="a-footer" href="#projetos">Projetos</a>
                     <a class="a-footer" href="#curriculo">Currículo</a>
                     <a class="a-footer" href="#contato">Contato</a>
@@ -380,17 +441,15 @@
             </div>
 
             <div class="footer-down">
-                <p class="footer-mark">© 2025 Felipe Ryo</p>
+                <p class="footer-mark">© <script>document.write(new Date().getFullYear())</script> Felipe Ryo</p>
             </div>
 
         </footer>
 
-        <div class="whatsapp">
-            <a href="https://wa.me/551172821988" target="_blank">
-                <i class="fab fa-whatsapp"></i>
-            </a>
-
-        </div>
+        <a class="whatsapp-float" href="https://wa.me/5511972821988" target="_blank" rel="noopener noreferrer"
+            aria-label="Enviar mensagem no WhatsApp">
+            <i class="fab fa-whatsapp"></i>
+        </a>
 
     </div>
 
@@ -446,6 +505,7 @@
     <script src="./responsiveness.js" defer></script>
     <script src="./observer.js" defer></script>
     <script src="./mobile-navbar.js" defer></script>
+    <script src="./active-nav.js" defer></script>
 
     <script defer>
         document.addEventListener("DOMContentLoaded", function () {
