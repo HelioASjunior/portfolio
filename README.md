@@ -1,6 +1,6 @@
 # Portifolio Hélio Júnior
 
-Portifólio pessoal desenvolvido com HTML, CSS e JavaScript, focado em apresentar projetos autorais, certificados e formas de contato profissional.
+Portifólio pessoal desenvolvido com HTML, CSS e JavaScript, focado em apresentar projetos, certificados e formas de contato profissional.
 
 ## Preview
 
