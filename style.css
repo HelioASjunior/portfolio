@@ -58,8 +58,8 @@ header {
     }
 
     a:hover {
-        color: #ff00c8;
-        text-shadow: 0 0 10px rgba(255, 0, 200, 0.3);
+        color: #00a6ff;
+        text-shadow: 0 0 10px rgba(0, 166, 255, 0.3);
     }
 }
 
@@ -75,7 +75,7 @@ header {
     gap: 50px;
 
     a {
-        color: #ff00c8;
+        color: #00a6ff;
     }
 }
 
@@ -103,6 +103,7 @@ header {
 .p-infos {
     font-size: 20px;
     color: #ffffff;
+    text-align: justify;
 }
 
 ul {
@@ -129,10 +130,10 @@ ul {
 }
 
 .a-social-media i:hover {
-    color: #ff00c8;
-    border-color: #ff00c8;
+    color: #00a6ff;
+    border-color: #00a6ff;
     transform: scale(1.1);
-    box-shadow: 0 0 15px rgba(255, 0, 200, 0.4), inset 0 0 15px rgba(255, 0, 200, 0.1);
+    box-shadow: 0 0 15px rgba(0, 166, 255, 0.4), inset 0 0 15px rgba(0, 166, 255, 0.1);
 }
 
 .a-social-media {
@@ -169,13 +170,13 @@ ul {
         from 0deg,
         transparent 0%,
         transparent 55%,
-        rgba(255, 0, 200, 0.03) 65%,
-        rgba(255, 0, 200, 0.3) 73%,
-        #ff00c8 78%,
+        rgba(0, 166, 255, 0.03) 65%,
+        rgba(0, 166, 255, 0.3) 73%,
+        #00a6ff 78%,
         #fff 80%,
-        #ff00c8 82%,
-        rgba(255, 0, 200, 0.3) 87%,
-        rgba(255, 0, 200, 0.03) 95%,
+        #00a6ff 82%,
+        rgba(0, 166, 255, 0.3) 87%,
+        rgba(0, 166, 255, 0.03) 95%,
         transparent 100%
     );
     animation: orbit-glow 4s linear infinite;
@@ -190,9 +191,9 @@ ul {
         from 0deg,
         transparent 0%,
         transparent 60%,
-        rgba(255, 0, 200, 0.2) 76%,
-        rgba(255, 0, 200, 0.5) 80%,
-        rgba(255, 0, 200, 0.2) 84%,
+        rgba(0, 166, 255, 0.2) 76%,
+        rgba(0, 166, 255, 0.5) 80%,
+        rgba(0, 166, 255, 0.2) 84%,
         transparent 100%
     );
     animation: orbit-glow 4s linear infinite;
@@ -218,8 +219,8 @@ ul {
     display: block;
     width: 24px;
     height: 24px;
-    border-right: 2px solid rgba(255, 0, 200, 0.6);
-    border-bottom: 2px solid rgba(255, 0, 200, 0.6);
+    border-right: 2px solid rgba(0, 166, 255, 0.6);
+    border-bottom: 2px solid rgba(0, 166, 255, 0.6);
     transform: rotate(45deg);
     animation: scroll-bounce 2s ease-in-out infinite;
 }
@@ -258,9 +259,9 @@ ul {
 }
 
 .tech-item:hover {
-    border-color: rgba(255, 0, 200, 0.3);
+    border-color: rgba(0, 166, 255, 0.3);
     transform: translateY(-4px);
-    box-shadow: 0 8px 24px rgba(255, 0, 200, 0.1);
+    box-shadow: 0 8px 24px rgba(0, 166, 255, 0.1);
 }
 
 .tech-item i {
@@ -277,7 +278,7 @@ ul {
 /* Nav Active */
 
 .nav-list a.active {
-    color: #ff00c8;
+    color: #00a6ff;
 }
 
 .projects-swiper {
@@ -311,7 +312,7 @@ ul {
 }
 
 .span-title {
-    color: #ff00c8;
+    color: #00a6ff;
 }
 
 .container-projects {
@@ -348,6 +349,31 @@ swiper-slide {
     border-radius: 20px;
 }
 
+.pdf-thumb {
+    width: 325px;
+    height: 183px;
+    border-radius: 20px;
+    background: linear-gradient(135deg, rgba(0, 166, 255, 0.25), rgba(5, 5, 5, 0.95));
+    border: 1px solid rgba(0, 166, 255, 0.4);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.pdf-thumb i {
+    font-size: 44px;
+    color: #ff3b30;
+}
+
+.pdf-thumb span {
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #fff;
+}
+
 .project {
     position: relative;
     margin-top: 20px;
@@ -359,8 +385,8 @@ swiper-slide {
 }
 
 .project:hover {
-    border-color: rgba(255, 0, 200, 0.4);
-    box-shadow: 0 0 20px rgba(255, 0, 200, 0.15);
+    border-color: rgba(0, 166, 255, 0.4);
+    box-shadow: 0 0 20px rgba(0, 166, 255, 0.15);
 }
 
 .project-h3 {
@@ -431,15 +457,98 @@ swiper-slide {
 }
 
 .btn-deploy {
-    background: #ff00c8;
-    border: 1px solid #ff00c8;
+    background: #00a6ff;
+    border: 1px solid #00a6ff;
     color: #fff;
 }
 
 .btn-deploy:hover {
-    background: #d400a8;
-    box-shadow: 0 0 15px rgba(255, 0, 200, 0.4);
+    background: #0087d1;
+    box-shadow: 0 0 15px rgba(0, 166, 255, 0.4);
     transform: scale(1.05);
+}
+
+.btn-certificado {
+    cursor: pointer;
+}
+
+.btn-certificado-imagem {
+    cursor: zoom-in;
+}
+
+.certificate-modal {
+    position: fixed;
+    inset: 0;
+    z-index: 200;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.85);
+    backdrop-filter: blur(6px);
+    padding: 20px;
+}
+
+.certificate-modal.is-open {
+    display: flex;
+}
+
+.certificate-modal-content {
+    width: min(1100px, 100%);
+    height: min(90vh, 860px);
+    background: #0a0a0a;
+    border: 1px solid rgba(0, 166, 255, 0.4);
+    border-radius: 16px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.certificate-modal-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    padding: 14px 18px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.certificate-modal-header h3 {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.certificate-close {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    border: 1px solid rgba(0, 166, 255, 0.6);
+    background: rgba(0, 166, 255, 0.15);
+    color: #fff;
+    cursor: pointer;
+    transition: transform 0.2s, background 0.2s;
+}
+
+.certificate-close:hover {
+    transform: scale(1.05);
+    background: rgba(0, 166, 255, 0.3);
+}
+
+#certificate-iframe {
+    flex: 1;
+    width: 100%;
+    border: none;
+    background: #111;
+}
+
+#certificate-image {
+    display: none;
+    flex: 1;
+    width: 100%;
+    object-fit: contain;
+    background: #111;
 }
 
 .curriculo {
@@ -449,8 +558,8 @@ swiper-slide {
     justify-content: center;
     gap: 200px;
     align-items: center;
-    background: radial-gradient(ellipse at 20% 50%, rgba(255, 0, 200, 0.06) 0%, transparent 50%),
-                radial-gradient(ellipse at 80% 50%, rgba(148, 67, 216, 0.06) 0%, transparent 50%),
+    background: radial-gradient(ellipse at 20% 50%, rgba(0, 166, 255, 0.06) 0%, transparent 50%),
+                radial-gradient(ellipse at 80% 50%, rgba(59, 130, 246, 0.06) 0%, transparent 50%),
                 #050505;
     position: relative;
     z-index: 2;
@@ -468,18 +577,18 @@ swiper-slide {
 
 .curriculo::before {
     top: 0;
-    background: linear-gradient(90deg, transparent 40%, #ff00c8 49%, #fff 50%, #ff00c8 51%, transparent 60%);
+    background: linear-gradient(90deg, transparent 40%, #00a6ff 49%, #fff 50%, #00a6ff 51%, transparent 60%);
     background-size: 300% 100%;
     animation: line-sweep-right 3.5s linear infinite;
-    box-shadow: 0 0 12px rgba(255, 0, 200, 0.4), 0 0 30px rgba(255, 0, 200, 0.15);
+    box-shadow: 0 0 12px rgba(0, 166, 255, 0.4), 0 0 30px rgba(0, 166, 255, 0.15);
 }
 
 .curriculo::after {
     bottom: 0;
-    background: linear-gradient(90deg, transparent 40%, #9443d8 49%, #fff 50%, #9443d8 51%, transparent 60%);
+    background: linear-gradient(90deg, transparent 40%, #3b82f6 49%, #fff 50%, #3b82f6 51%, transparent 60%);
     background-size: 300% 100%;
     animation: line-sweep-left 3.5s linear infinite;
-    box-shadow: 0 0 12px rgba(148, 67, 216, 0.4), 0 0 30px rgba(148, 67, 216, 0.15);
+    box-shadow: 0 0 12px rgba(59, 130, 246, 0.4), 0 0 30px rgba(59, 130, 246, 0.15);
 }
 
 @keyframes line-sweep-right {
@@ -518,7 +627,7 @@ swiper-slide {
 
 .btn-curriculo {
     background: none;
-    border: 1px solid #ff00c8;
+    border: 1px solid #00a6ff;
     border-radius: 30px;
     width: 250px;
     padding: 15px;
@@ -537,9 +646,9 @@ swiper-slide {
 }
 
 .btn-curriculo:hover {
-    border-color: #ff00c8;
-    color: #ff00c8;
-    box-shadow: 0 0 30px rgba(255, 0, 200, 0.5), 0 0 60px rgba(255, 0, 200, 0.2);
+    border-color: #00a6ff;
+    color: #00a6ff;
+    box-shadow: 0 0 30px rgba(0, 166, 255, 0.5), 0 0 60px rgba(0, 166, 255, 0.2);
     animation: none;
 }
 
@@ -554,8 +663,8 @@ swiper-slide {
 }
 
 .container-curriculo:hover {
-    box-shadow: 0 0 20px rgba(255, 0, 200, 0.3);
-    border: solid 1px #ff00c8;
+    box-shadow: 0 0 20px rgba(0, 166, 255, 0.3);
+    border: solid 1px #00a6ff;
 }
 
 .curriculo-img {
@@ -637,7 +746,7 @@ swiper-slide {
 
 .form-group input:focus,
 .form-group textarea:focus {
-    border-color: #ff00c8;
+    border-color: #00a6ff;
 }
 
 .btn-contato {
@@ -689,13 +798,13 @@ swiper-slide {
 }
 
 .contato-card:hover {
-    border-color: #ff00c8;
-    box-shadow: 0 0 15px rgba(255, 0, 200, 0.15);
+    border-color: #00a6ff;
+    box-shadow: 0 0 15px rgba(0, 166, 255, 0.15);
     transform: translateX(4px);
 }
 
 .contato-card i {
-    color: #ff00c8;
+    color: #00a6ff;
     font-size: 24px;
     min-width: 30px;
     text-align: center;
@@ -722,10 +831,10 @@ swiper-slide {
     left: 0;
     width: 100%;
     height: 2px;
-    background: linear-gradient(90deg, transparent 40%, #ff00c8 49%, #fff 50%, #ff00c8 51%, transparent 60%);
+    background: linear-gradient(90deg, transparent 40%, #00a6ff 49%, #fff 50%, #00a6ff 51%, transparent 60%);
     background-size: 300% 100%;
     animation: line-sweep-right 3.5s linear infinite;
-    box-shadow: 0 0 12px rgba(255, 0, 200, 0.4), 0 0 30px rgba(255, 0, 200, 0.15);
+    box-shadow: 0 0 12px rgba(0, 166, 255, 0.4), 0 0 30px rgba(0, 166, 255, 0.15);
 }
 
 .footer-up {
@@ -887,10 +996,10 @@ swiper-slide {
 
 @keyframes pulse-glow {
     0%, 100% {
-        box-shadow: 0 0 5px rgba(255, 0, 200, 0.15);
+        box-shadow: 0 0 5px rgba(0, 166, 255, 0.15);
     }
     50% {
-        box-shadow: 0 0 20px rgba(255, 0, 200, 0.4), 0 0 40px rgba(255, 0, 200, 0.15);
+        box-shadow: 0 0 20px rgba(0, 166, 255, 0.4), 0 0 40px rgba(0, 166, 255, 0.15);
     }
 }
 
