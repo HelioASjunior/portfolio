@@ -1,10 +1,10 @@
 # Portifolio Hélio Júnior
 
-Portifólio pessoal desenvolvido com HTML, CSS e JavaScript, focado em apresentar projetos, certificados e formas de contato profissional.
+Portfólio pessoal desenvolvido com HTML, CSS e JavaScript, focado em apresentar projetos, certificados e formas de contato profissional.
 
 ## Preview
 
-![Preview do portifólio](./assets/mockups/mockup.png)
+![Preview do portfólio](./assets/mockups/mockup.png)
 
 ## Objetivo
 
@@ -43,7 +43,7 @@ Este projeto reúne:
 - Malware Analysis (Estudo)
 - Wallpaper Animado Steam "Tema Dev"
 - Estudo Fast API
-- Portifólio Github
+- Portfólio Github
 
 ## Certificados
 

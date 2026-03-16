@@ -8,7 +8,7 @@ const projects = {
         { name: "Malware Analysis (Estudo)", tech: "Cybersecurity | Estudo de Análise de Malware", img: "Malware Analysis.webp", repo: "https://github.com/HelioASjunior/Malware-Analysis-Study", deploy: null },
         { name: "Wallpaper Animado Steam \"Tema Dev\"", tech: "Python | Wallpaper Engine | Tema Dev", img: "wallpapersteam.webp", repo: "https://github.com/HelioASjunior/Python-Dev-Wallpaper", deploy: "https://steamcommunity.com/sharedfiles/filedetails/?id=3681459754&snr=___" },
         { name: "Estudo Fast API", tech: "Python | FastAPI | Estudos", img: "Estudo_Fast_Api.webp", repo: "https://github.com/HelioASjunior/FastAPI-Estudo", deploy: null },
-        { name: "Portifólio Github", tech: "Portifólio | Repositórios e Projetos", img: "portifolio.webp", repo: "https://github.com/HelioASjunior", deploy: null },
+        { name: "Portfólio Github", tech: "Portfólio | Repositórios e Projetos", img: "portifolio.webp", repo: "https://github.com/HelioASjunior", deploy: null },
     ],
     certificados: [
         { name: "Administrando Banco de Dados", tech: "Certificado", img: "Administrando Banco de Dados.jpg", folder: "certificados" },
