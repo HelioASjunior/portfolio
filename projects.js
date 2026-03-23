@@ -10,7 +10,7 @@ const projects = {
         { name: "Estudo Fast API", tech: "Python | FastAPI | Estudos", img: "Estudo_Fast_Api.webp", repo: "https://github.com/HelioASjunior/FastAPI-Estudo", deploy: null },
         { name: "Portfólio Github", tech: "Portfólio | Repositórios e Projetos", img: "portifolio.webp", repo: "https://github.com/HelioASjunior", deploy: null },
     ],
-    certificados: [
+    certificados: [ // Certificados organizados em ordem alfabética
         { name: "Administrando Banco de Dados", tech: "Certificado", img: "Administrando Banco de Dados.jpg", folder: "certificados" },
         { name: "AWS Simulearn - Generative AI Practitioner", tech: "Certificado", img: "AWS Simulearn - Generative AI Practitioner.jpg", folder: "certificados" },
         { name: "Cibersegurança", tech: "Certificado", img: "Cibersegurança.jpg", folder: "certificados" },
@@ -18,6 +18,8 @@ const projects = {
         { name: "LGPD", tech: "Certificado", img: "LGPD.jpg", folder: "certificados" },
         { name: "Engenheiro de Agentes de IA", tech: "Certificado", img: "Engenheiro de Agentes de IA.png", folder: "certificados" },
         { name: "Git e Github- Controle de Versão e Colaboração", tech: "Certificado", img: "Git e Github- Controle de Versão e Colaboração.png", folder: "certificados" },
+        { name: "GenAI & Dados", tech: "Certificado", img: "GenAI & Dados.jpg", folder: "certificados" },
+        { name: "Linux Unhatched - IFSP - Campus Salto - 2026-1", tech: "Certificado", img: "Linux Unhatched - IFSP - Campus Salto - 2026-1.jpg", folder: "certificados" },
     ],
 };
 
